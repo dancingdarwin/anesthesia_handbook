@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:sherlock/completion.dart';
 import 'package:sherlock/result.dart';
 import 'package:sherlock/sherlock.dart';
-import 'package:sherlock/widget.dart';
 
 import '../util.dart';
 import './emergency_drawer.dart';
@@ -22,6 +20,15 @@ class _EmergencyHomeState extends State<EmergencyHome> {
   /// but can be replaced by search results)
   List<Map<String,dynamic>> _toBeListed = emergencyTopics;
 
+  /// SearchBar Widget
+  late Widget _searchBar;
+
+  /// Text controller for the SearchBar
+  final _controller = TextEditingController();
+
+  /// Sherlock Instance for searching
+  final Sherlock _sherlock = Sherlock(elements: emergencyTopics);
+
   /// GridView of TileButtons
   Widget _buttonGrid = GridView.extent(
       primary: false,
@@ -36,31 +43,41 @@ class _EmergencyHomeState extends State<EmergencyHome> {
   void initState() {
     super.initState();
     generateTileButtons();
+    buildSearchBar();
   }
 
-  SherlockSearchBar buildSearchBar() {
-    return SherlockSearchBar(
-      sherlock: Sherlock(elements: emergencyTopics),
-      sherlockCompletion: SherlockCompletion(elements: emergencyTopics, where: 'name'),
-      sherlockCompletionMinResults: 1,
-      onSearch: searchTopics,
-      completionsBuilder: (context,completions) => SherlockCompletionsBuilder(
-        completions: completions,
-        buildCompletion: (completion) => Padding(
-          padding: const EdgeInsets.all(8),
-          child: Row(
-            children: [
-              Text(
-                completion,
-                style: const TextStyle(fontSize: 14),
+  void buildSearchBar() {
+    _searchBar = Row(
+      children: [
+        const SizedBox(width: 15.0,),
+        Expanded(
+          child: TextField(
+            decoration: InputDecoration(
+              border: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(45.0),
+                borderSide: const BorderSide(
+                  width: 2.0,
+                  color: Color(0xFFFF0000),
+                ),
               ),
-              const Spacer(),
-              const Icon(Icons.check),
-              const Icon(Icons.close)
-            ],
+              hintText: 'Search Scenarios',
+              prefixIcon: const Icon(Icons.search),
+              suffixIcon: IconButton( // Gives button at end of SearchBar to clear input
+                icon: const Icon(Icons.close),
+                onPressed: () {
+                  _controller.clear();
+                  searchTopics('');
+                },
+                tooltip: 'Clear',
+              )
+            ),
+            onChanged: (String input) {searchTopics(input);},
+            onSubmitted: (String input) {searchTopics(input);},
+            controller: _controller,
           ),
         ),
-      ),
+        const SizedBox(width: 15.0,),
+      ],
     );
   }
 
@@ -87,14 +104,22 @@ class _EmergencyHomeState extends State<EmergencyHome> {
     );
   }
 
-  void searchTopics(String input,Sherlock sherlock) async {
-    /// Searches for the emergency topics using Sherlock
-    List<Result> searchResults = await sherlock.search(input: input); 
+  void searchTopics(String input) async {
+    if (input == '') {
+      setState(() {
+        _toBeListed = emergencyTopics;
+        generateTileButtons();
+      });
+    } else {
+      /// Searches for the emergency topics using Sherlock
+      List<Result> searchResults = await _sherlock.search(input: input); 
 
-    setState(() {          
-      _toBeListed = searchResults.sorted().unwrap();
-      generateTileButtons();
-    });
+      setState(() {          
+        _toBeListed = searchResults.sorted().unwrap();
+        generateTileButtons();
+      });
+    }
+
   }
 
   @override
@@ -113,8 +138,10 @@ class _EmergencyHomeState extends State<EmergencyHome> {
       drawerEnableOpenDragGesture: true,
       body: Column(
         children: [
-          buildSearchBar(),
-          _buttonGrid,
+          const SizedBox(height: 10),
+          _searchBar,
+          const SizedBox(height: 5),
+          Expanded(child: _buttonGrid),
         ],
       ),
     );
