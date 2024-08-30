@@ -1,4 +1,5 @@
 import 'dart:ui';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import 'package:anesthesia_handbook/EmergencyManual/emergency_home.dart';
 import './EmergencyManual/emergency_page.dart';
@@ -96,7 +97,7 @@ final GoRouter _router = GoRouter(
   ],
 );
 
-void main() => runApp(const HopkinsApp());
+void main() => runApp(const ProviderScope(child: HopkinsApp()));
 
 class HopkinsApp extends StatelessWidget {
   /// Defines the Hopkins Anesthesia App theme data and home page.

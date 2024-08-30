@@ -22,7 +22,7 @@ const List<Map<String,dynamic>> emergencyTopics = [
     'iconColor': Colors.white
   },
   {
-    'name': 'Bradycardia',
+    'name': 'ACLS-Bradycardia',
     'pageTitle': 'Brady',
     'tags': ['ACLS','Arrythmia','Slow','heart rate'],
     'icon': Icons.monitor_heart,
@@ -30,7 +30,7 @@ const List<Map<String,dynamic>> emergencyTopics = [
     'iconColor': Colors.white
   },
   {
-    'name': 'Unstable Tach',
+    'name': 'ACLS-Unstable Tach',
     'pageTitle': 'UnstableTach',
     'tags': ['ACLS','Arrythmia','Fast','heart rate','hypotension','low blood pressure','bp','tachycardia','VT','SVT','RVR','AFib'],
     'icon': Icons.monitor_heart,
@@ -38,7 +38,7 @@ const List<Map<String,dynamic>> emergencyTopics = [
     'iconColor': Colors.white
   },
   {
-    'name': 'Stable Tach',
+    'name': 'ACLS-Stable Tach',
     'pageTitle': 'StableTach',
     'tags': ['ACLS','Arrythmia','Fast','heart rate','Tachycardia','SVT','VT','AFib','RVR'],
     'icon': Icons.monitor_heart,

@@ -3,6 +3,8 @@ import 'package:flutter/services.dart' show rootBundle;
 
 import 'package:anesthesia_handbook/EmergencyManual/emergency_card.dart';
 import './emergency_drawer.dart';
+import './emergency_topics.dart';
+import './timer_button.dart';
 
 class EmergencyPage extends StatefulWidget {
   final String pageTitle;
@@ -16,20 +18,24 @@ class _EmergencyPageState extends State<EmergencyPage> {
   /// Content of Markdown file.
   String _text = '';
 
+  /// Title to display in the AppBar
+  String _barTitle = '';
+
   /// List of Emergency Cards to display.
   List<EmergencyCard> _children = [];
 
-  String _barTitle = '';
+  /// Widget containing all of the Emergency Cards
+  late Widget _allCards;
+
+  /// Widget for the Emergency Page
+  late Widget _emergencyPage;
 
   @override
   void initState() {
     super.initState();
     getText();
-
-    _barTitle = switch (widget.pageTitle) {
-      'ACLS-AsystolePEA' => 'ACLS - Asystole/PEA',
-      _ => 'Emergency Manual'
-    };
+    renderWidget();
+    _barTitle = emergencyTopics.where((p) => p["pageTitle"] == widget.pageTitle).first['name'];
   }
 
   Future<String> getText() async {
@@ -45,9 +51,29 @@ class _EmergencyPageState extends State<EmergencyPage> {
     setState(() { 
       _text = response;
       _children = parseText();
+      renderWidget();
     }); 
 
     return response;
+  }
+
+  void renderWidget() {
+    _allCards = ListView(
+      padding: const EdgeInsets.all(8),
+      shrinkWrap: true,
+      children: _children,
+    );
+
+    _emergencyPage = switch (widget.pageTitle) {
+      'ACLS-AsystolePEA' => Column(
+        children: [
+          const PEAButtons(),
+          Expanded(child: _allCards,),
+          const MainTimer(),
+        ],
+      ),
+      _ => _allCards,
+    };
   }
 
   List<EmergencyCard> parseText() {
@@ -89,11 +115,7 @@ class _EmergencyPageState extends State<EmergencyPage> {
       ),
       drawer: const EmergencyDrawer(),
       drawerEdgeDragWidth: MediaQuery.of(context).size.width,
-      body: ListView(
-        padding: const EdgeInsets.all(8),
-        shrinkWrap: true,
-        children: _children,
-      ),
+      body: _emergencyPage,
     );
   }
 
