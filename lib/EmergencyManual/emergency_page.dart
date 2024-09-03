@@ -67,9 +67,13 @@ class _EmergencyPageState extends State<EmergencyPage> {
     _emergencyPage = switch (widget.pageTitle) {
       'ACLS-AsystolePEA' => Column(
         children: [
+          const SizedBox(height: 10),
           const PEAButtons(),
+          const SizedBox(height: 10),
           Expanded(child: _allCards,),
+          const SizedBox(height: 5),
           const MainTimer(),
+          const SizedBox(height: 5),
         ],
       ),
       _ => _allCards,

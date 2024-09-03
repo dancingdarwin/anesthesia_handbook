@@ -68,3 +68,65 @@ void launchURL(targetUrl) async {
 void goEmergencyPage(BuildContext context, pageTitle) {
   context.pushNamed('emergencypage',pathParameters: {'pageTitle': pageTitle});
 }
+
+class BlinkingButton extends StatefulWidget {
+  /// Creates a Button that continually blinks a specified color
+  
+  final Widget child;
+
+  /// Starting color of button
+  final Color startColor;
+
+  /// The color that the button will blink to
+  final Color endColor;
+
+  /// Callback for when button is pressed
+  final VoidCallback onPressed;
+
+  const BlinkingButton({
+    required this.startColor,
+    required this.endColor,
+    required this.onPressed,
+    required this.child,
+    super.key
+  });
+
+  @override
+  State<BlinkingButton> createState() => _BlinkingButtonState();
+}
+
+class _BlinkingButtonState extends State<BlinkingButton> with SingleTickerProviderStateMixin{
+  late final AnimationController _animationController;
+
+  @override
+  void initState() {
+    _animationController = AnimationController(
+      vsync: this,
+      duration: const Duration(milliseconds: 500),
+    );
+    _animationController.repeat(reverse: true);
+    super.initState();
+  }
+
+  @override
+  void dispose() {
+    _animationController.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    Animation<Color?> animation = ColorTween(
+      begin: widget.startColor,
+      end: widget.endColor,
+    ).animate(_animationController)..addListener(
+      () {setState(() { });}
+    );
+
+    return ElevatedButton(
+      onPressed: widget.onPressed,
+      style: ElevatedButton.styleFrom(backgroundColor: animation.value),
+      child: widget.child);
+  }
+
+}

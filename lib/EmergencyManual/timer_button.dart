@@ -1,3 +1,5 @@
+import 'package:anesthesia_handbook/util.dart';
+
 import './acls_timers.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -39,21 +41,31 @@ class TimerButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ElevatedButton(
-      onPressed: onPressed,
-      //style: ElevatedButton.styleFrom(backgroundColor: theme.colorScheme.primary),
-      child: Row(
-        children: [
-          Row(
-            children: [
-              decoration,
-              Text(' | $numTimes | ${formatTime(time)}')
-            ]
-          ),
-          //Text(time)
-        ],
-      ),
+    Widget child = Row(
+      children: [
+        Row(
+          children: [
+            decoration,
+            Text(' | $numTimes | ${formatTime(time)}')
+          ]
+        ),
+        //Text(time)
+      ],
     );
+
+    if (time / 60000 < frequency) {
+      return ElevatedButton(
+        onPressed: onPressed,
+        //style: ElevatedButton.styleFrom(backgroundColor: theme.colorScheme.primary),
+        child: child,
+      );
+    } else {
+      return BlinkingButton(
+        startColor: Colors.white,
+        endColor: Colors.red[200]!,
+        onPressed: onPressed,
+        child: child,);
+    }
   }
 }
 
@@ -110,11 +122,13 @@ class PEAButtons extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
+    return const Row(
       children: [
-        const CPRButton(),
-        Expanded(child: Container(),),
-        const EpiButton(),
+        SizedBox(width: 5,),
+        CPRButton(),
+        Spacer(),
+        EpiButton(),
+        SizedBox(width: 5,),
       ],
     );
   }
@@ -146,14 +160,26 @@ class MainTimer extends ConsumerWidget {
     ElevatedButton startStop = ElevatedButton(
       onPressed: timersState['running'] == 1 ? ref.read(aclsTimersProvider.notifier).stopMain : ref.read(aclsTimersProvider.notifier).startMain,
       style: ElevatedButton.styleFrom(backgroundColor: theme.colorScheme.error),
-      child: Text(timersState['running'] == 1 ? 'Stop' : 'Start',style: TextStyle(color: theme.colorScheme.onError)),
+      child: Text(timersState['running'] == 1 ? 'Pause' : 'Start',style: TextStyle(color: theme.colorScheme.onError)),
+    );
+
+    ElevatedButton reset = ElevatedButton(
+      onPressed: timersState['pulseChecks']! > 0 ? ref.read(aclsTimersProvider.notifier).resetMain : null,
+      style: ElevatedButton.styleFrom(backgroundColor: theme.colorScheme.error),
+      child: Text('Reset',style: TextStyle(color: theme.colorScheme.onError)),
     );
 
     return Row(
       children: [
-        const Text('TOTAL TIME'),
-        Text(TimerButton.formatTime(timersState['mainTime'] ?? 0)),
+        const SizedBox(width: 25,),
+        const Text('TOTAL TIME', style: TextStyle(fontWeight: FontWeight.bold),),
+        const Spacer(),
+        Text(TimerButton.formatTime(timersState['mainTime'] ?? 0), style: TextStyle(fontWeight: FontWeight.bold),),
+        const Spacer(),
         startStop,
+        const Spacer(),
+        reset,
+        const SizedBox(width: 25,),
       ],
     );
   }

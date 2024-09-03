@@ -46,7 +46,7 @@ class AclsTimers extends _$AclsTimers{
     if (!_mainTimer.isRunning) {
       _mainTimer.start();
       _renderTimer = Timer.periodic(const Duration(milliseconds: 250), render);
-      _pulseTimer.start();
+      pulseCheck();
     }
 
     render(_renderTimer);
@@ -56,9 +56,34 @@ class AclsTimers extends _$AclsTimers{
     if (_mainTimer.isRunning) {
       _mainTimer.stop();
 
+      _pulseTimer.stop();
+      _epiTimer.stop();
+      _shockTimer.stop();
+
       _renderTimer.cancel();
       render(_renderTimer);
     }
+  }
+
+  void resetMain() {
+    stopMain();
+
+    _pulseTimer.stop();
+    _pulseTimer.reset();
+    _pulseChecks = 0;
+    
+    _epiTimer.stop();
+    _epiTimer.reset();
+    _epiGiven = 0;
+    
+    _shockTimer.stop();
+    _shockTimer.reset();
+    _shocksGiven = 0;
+
+    _mainTimer.stop();
+    _mainTimer.reset();
+
+    render(_renderTimer);
   }
 
   void pulseCheck() {
