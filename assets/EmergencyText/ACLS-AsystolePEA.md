@@ -5,7 +5,7 @@
 * Call for Code Cart
 * Assign Team Member to Read Cognitive Aid out loud
 
-# CPR
+# CPR/Rhythm Checks
 * Rate 100-120 Compressions/min, minimize breaks
 * Depth >= 5 cm; allow chest recoil, consider backboard
 * **Keep EtCO2 > 10 mm Hg and Diastolic BP > 20 mm Hg**

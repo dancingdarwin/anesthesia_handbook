@@ -95,7 +95,7 @@ class EpiButton extends ConsumerWidget{
       decoration: const Text('EPI'),
       onPressed: ref.read(aclsTimersProvider.notifier).giveEpi,
       numTimes: timersState['epiGiven'] ?? 0,
-      time: timersState['epiText'] ?? 0,
+      time: timersState['epiTime'] ?? 0,
       frequency: 3,
     );
   }
@@ -124,11 +124,11 @@ class PEAButtons extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Row(
       children: [
-        SizedBox(width: 5,),
+        Spacer(flex: 1),
         CPRButton(),
-        Spacer(),
+        Spacer(flex: 2),
         EpiButton(),
-        SizedBox(width: 5,),
+        Spacer(flex: 1),
       ],
     );
   }
@@ -174,7 +174,7 @@ class MainTimer extends ConsumerWidget {
         const SizedBox(width: 25,),
         const Text('TOTAL TIME', style: TextStyle(fontWeight: FontWeight.bold),),
         const Spacer(),
-        Text(TimerButton.formatTime(timersState['mainTime'] ?? 0), style: TextStyle(fontWeight: FontWeight.bold),),
+        Text(TimerButton.formatTime(timersState['mainTime'] ?? 0), style: const TextStyle(fontWeight: FontWeight.bold),),
         const Spacer(),
         startStop,
         const Spacer(),
