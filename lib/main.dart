@@ -1,4 +1,5 @@
 import 'dart:ui';
+import 'package:anesthesia_handbook/Calculators/patient_widget.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import 'package:anesthesia_handbook/EmergencyManual/emergency_home.dart';
@@ -67,7 +68,7 @@ final GoRouter _router = GoRouter(
           routes: [
             GoRoute(
               path: '/calculator',
-              pageBuilder: (context,state) => const NoTransitionPage(child: Placeholder()),
+              pageBuilder: (context,state) => const NoTransitionPage(child: DemographicsPage()),
               routes: [
                 GoRoute(
                   path: 'about',

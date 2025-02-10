@@ -19,8 +19,9 @@
 * If mask ventilation, 30 compressions to 2 breaths
 * If airway secured: 10 breaths/min, tidal volume 6-7 cc/kg IBW
 
-# IV Access
+# IV Access/Labs
 * Ensure functional IV or IO Access
+* Draw Labs
 
 # Meds
 * **Turn off anesthetic agent and vasodilating drips**
@@ -36,5 +37,5 @@
 # Post Arrest
 * If ROSC: arrange for ICU care and consider cooling
 
-# Causes
+# Causes (H's and T's)
 * Explore [H's and T's](HandTs)

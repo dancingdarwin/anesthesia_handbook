@@ -143,7 +143,7 @@ const List<Map<String,dynamic>> emergencyTopics = [
   },
   {
     'name': 'Hypoxemia',
-    'pageTitle': 'hypoxemia',
+    'pageTitle': 'Hypoxemia',
     'tags': ['Hypoxia','low oxygen','o2 sat','spo2'],
     'icon': FontAwesomeIcons.maskVentilator,
     'backgroundColor': Colors.blue,
@@ -215,7 +215,7 @@ const List<Map<String,dynamic>> emergencyTopics = [
   },
   {
     'name': 'Trauma',
-    'pageTitle': 'trauma',
+    'pageTitle': 'Trauma',
     'tags': ['gunshot','penetrating','blunt','shot','high energy','Rob Sikorski','Peter Lax'],
     'icon': FontAwesomeIcons.bone,
     'backgroundColor': Colors.grey,

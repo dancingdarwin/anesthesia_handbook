@@ -47,6 +47,9 @@ class AclsTimers extends _$AclsTimers{
       _mainTimer.start();
       _renderTimer = Timer.periodic(const Duration(milliseconds: 250), render);
       pulseCheck();
+      if (_pulseChecks >= 2) {
+        _pulseChecks --;
+      }
     }
 
     render(_renderTimer);

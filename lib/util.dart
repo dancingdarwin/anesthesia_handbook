@@ -130,3 +130,34 @@ class _BlinkingButtonState extends State<BlinkingButton> with SingleTickerProvid
   }
 
 }
+
+class CollapsibleCard extends StatelessWidget {
+  final ExpansionTileController controller;
+  final Widget child;
+  final String heading;
+  final Color color;
+
+  const CollapsibleCard({required this.heading, required this.child, required this.controller, this.color = Colors.blue, super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Card(
+      clipBehavior: Clip.antiAlias,
+      child: Container(
+        decoration: BoxDecoration(
+          border: Border(
+            left: BorderSide(color: color,width: 10))
+        ),
+        child: ExpansionTile(
+          controller: controller,
+          title: Text(heading, style: const TextStyle(fontWeight: FontWeight.bold),),
+          dense: true,
+          childrenPadding: const EdgeInsets.only(bottom: 8.0),
+          children: [child],
+        )
+      ),
+    );
+  }
+  
+  
+}
