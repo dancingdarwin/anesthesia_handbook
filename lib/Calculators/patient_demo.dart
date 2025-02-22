@@ -7,7 +7,7 @@ part 'patient_demo.g.dart';
 
 class Patient {
   // TODO: Refactor to make immutable
-  
+
   /// Age in Years 
   double? age;
 
@@ -164,7 +164,7 @@ class Patient {
 class PatientDemo extends _$PatientDemo{
   @override
   Patient build() {
-    return Patient();
+    return Patient(40,70,170,'M');
   }
 
   void setDemo(String value, String units, String demo) {

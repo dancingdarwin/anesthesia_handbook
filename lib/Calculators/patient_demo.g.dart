@@ -6,7 +6,7 @@ part of 'patient_demo.dart';
 // RiverpodGenerator
 // **************************************************************************
 
-String _$patientDemoHash() => r'789861ae25e5923d74327ae25f1f35d99bf7a5db';
+String _$patientDemoHash() => r'7d5558261de1482cd47433722cbe95fb2086f584';
 
 /// See also [PatientDemo].
 @ProviderFor(PatientDemo)

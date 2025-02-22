@@ -136,8 +136,9 @@ class CollapsibleCard extends StatelessWidget {
   final Widget child;
   final String heading;
   final Color color;
+  final bool initiallyExpanded;
 
-  const CollapsibleCard({required this.heading, required this.child, required this.controller, this.color = Colors.blue, super.key});
+  const CollapsibleCard({required this.heading, required this.child, required this.controller, this.color = Colors.blue, this.initiallyExpanded = false, super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -150,6 +151,7 @@ class CollapsibleCard extends StatelessWidget {
         ),
         child: ExpansionTile(
           controller: controller,
+          initiallyExpanded: initiallyExpanded,
           title: Text(heading, style: const TextStyle(fontWeight: FontWeight.bold),),
           dense: true,
           childrenPadding: const EdgeInsets.only(bottom: 8.0),
