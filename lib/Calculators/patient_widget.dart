@@ -1,3 +1,4 @@
+import 'package:anesthesia_handbook/Calculators/equipment.dart';
 import 'package:anesthesia_handbook/Calculators/patient_demo.dart';
 import 'package:anesthesia_handbook/util.dart';
 import 'package:flutter/material.dart';
@@ -249,7 +250,7 @@ class CalculatedWeightsWide extends ConsumerWidget {
             style: defaultStyle,
             children: <TextSpan>[
               const TextSpan(text: 'BMI: ', style: TextStyle(fontWeight: FontWeight.bold)),
-              TextSpan(text: '${patientState.bmi?.toStringAsFixed(1) ?? ''}'),
+              TextSpan(text: patientState.bmi?.toStringAsFixed(1) ?? ''),
             ],
           ),
         ),
@@ -259,7 +260,7 @@ class CalculatedWeightsWide extends ConsumerWidget {
             style: defaultStyle,
             children: <TextSpan>[
               const TextSpan(text: 'IBW: ', style: TextStyle(fontWeight: FontWeight.bold)),
-              TextSpan(text: '${patientState.ibw?.toStringAsFixed(1) ?? ''}'),
+              TextSpan(text: patientState.ibw?.toStringAsFixed(1) ?? ''),
             ],
           ),
         ),
@@ -269,7 +270,7 @@ class CalculatedWeightsWide extends ConsumerWidget {
             style: defaultStyle,
             children: <TextSpan>[
               const TextSpan(text: 'LBW: ', style: TextStyle(fontWeight: FontWeight.bold)),
-              TextSpan(text: '${patientState.lbw?.toStringAsFixed(1) ?? ''}'),
+              TextSpan(text: patientState.lbw?.toStringAsFixed(1) ?? ''),
             ],
           ),
         ),
@@ -297,7 +298,7 @@ class CalculatedWeightsNarrow extends ConsumerWidget {
             style: defaultStyle,
             children: <TextSpan>[
               const TextSpan(text: 'BMI: ', style: TextStyle(fontWeight: FontWeight.bold)),
-              TextSpan(text: '${patientState.bmi?.toStringAsFixed(1) ?? ''}'),
+              TextSpan(text: patientState.bmi?.toStringAsFixed(1) ?? ''),
             ],
           ),
         ),
@@ -307,7 +308,7 @@ class CalculatedWeightsNarrow extends ConsumerWidget {
             style: defaultStyle,
             children: <TextSpan>[
               const TextSpan(text: 'IBW: ', style: TextStyle(fontWeight: FontWeight.bold)),
-              TextSpan(text: '${patientState.ibw?.toStringAsFixed(1) ?? ''}'),
+              TextSpan(text: patientState.ibw?.toStringAsFixed(1) ?? ''),
             ],
           ),
         ),
@@ -317,7 +318,7 @@ class CalculatedWeightsNarrow extends ConsumerWidget {
             style: defaultStyle,
             children: <TextSpan>[
               const TextSpan(text: 'LBW: ', style: TextStyle(fontWeight: FontWeight.bold)),
-              TextSpan(text: '${patientState.lbw?.toStringAsFixed(1) ?? ''}'),
+              TextSpan(text: patientState.lbw?.toStringAsFixed(1) ?? ''),
             ],
           ),
         ),
@@ -340,8 +341,14 @@ class DemographicsPage extends StatelessWidget {
         ),
         backgroundColor: theme.colorScheme.primary,
       ),
-      body: const SafeArea(
-        child: PatientWidget()
+      body: SafeArea(
+        child: ListView(
+          children: const [
+            PatientWidget(),
+            AirwayEquipment(),
+            VascularEquipment()
+          ]
+        ),
       ),
     );
   }
