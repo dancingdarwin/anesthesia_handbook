@@ -1,9 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
+/// This file contains the list of emergency topics for the Emergency Manual.
+/// Each topic is represented as a map with the following keys:
+
 /// Emergency Scenarios. Name is the english name to be displayed.
 /// pageTitle is the Markdown file name in assets/EmergencyText
 /// Tags is a list of alternative search tags for Sherlock
+
 const List<Map<String,dynamic>> emergencyTopics = [
   {
     'name': 'ACLS-Asystole/PEA',
@@ -16,7 +20,15 @@ const List<Map<String,dynamic>> emergencyTopics = [
   {
     'name': 'ACLS-VFib/VTach',
     'pageTitle': 'ACLS-VFVT',
-    'tags': ['ACLS','Cardiac Arrest','Code Blue','VT'],
+    'tags': ['ACLS','Cardiac Arrest','Code Blue','VT','VF'],
+    'icon': Icons.heart_broken,
+    'backgroundColor': Colors.red,
+    'iconColor': Colors.white
+  },
+  {
+    'name': 'H\'s and T\'s',
+    'pageTitle': 'HandTs',
+    'tags': ['ACLS','Cardiac Arrest','Code Blue'],
     'icon': Icons.heart_broken,
     'backgroundColor': Colors.red,
     'iconColor': Colors.white
@@ -142,8 +154,16 @@ const List<Map<String,dynamic>> emergencyTopics = [
     'iconColor': Colors.white
   },
   {
-    'name': 'Hypoxemia',
+    'name': 'Hypoxemia (Start here)',
     'pageTitle': 'Hypoxemia',
+    'tags': ['Hypoxia','low oxygen','o2 sat','spo2'],
+    'icon': FontAwesomeIcons.maskVentilator,
+    'backgroundColor': Colors.blue,
+    'iconColor': Colors.white
+  },
+  {
+    'name': 'Hypoxemia DDx',
+    'pageTitle': 'HypoxiaDDx',
     'tags': ['Hypoxia','low oxygen','o2 sat','spo2'],
     'icon': FontAwesomeIcons.maskVentilator,
     'backgroundColor': Colors.blue,

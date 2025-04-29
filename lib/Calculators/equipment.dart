@@ -136,7 +136,7 @@ class AirwayEquipment extends ConsumerWidget {
       controller: ExpansionTileController(),
       color: Colors.blue,
       heading: 'Airway Equipment',
-      initiallyExpanded: true,
+      initiallyExpanded: false,
       child: DataTable(
         rows: [
           DataRow(cells: [const DataCell(Text('ETT Size (Cuffed)')), DataCell(Text(equipmentSize['ETT'] ?? 'N/A'))]),
@@ -201,7 +201,7 @@ class VascularEquipment extends ConsumerWidget {
       controller: ExpansionTileController(),
       color: Colors.red,
       heading: 'Vascular Access',
-      initiallyExpanded: true,
+      initiallyExpanded: false,
       child: DataTable(
         rows: [
           DataRow(cells: [const DataCell(Text('Art Line')), DataCell(Text(equipmentSize['A-Line'] ?? 'N/A'))]),

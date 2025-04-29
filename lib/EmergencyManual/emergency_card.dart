@@ -1,3 +1,4 @@
+import 'package:anesthesia_handbook/util.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_markdown/flutter_markdown.dart';
 import 'package:go_router/go_router.dart';
@@ -42,7 +43,12 @@ class _EmergencyCardState extends State<EmergencyCard> {
             physics: const NeverScrollableScrollPhysics(),
             padding: const EdgeInsets.all(0),
             onTapLink: (text,href,title) {
+              if (href!.length > 4 && href.substring(0,4) == 'http') {
+                // Open the link in a webview
+                launchURL(href);
+              } else{
               context.pushNamed('emergencypage',pathParameters: {'pageTitle': href as String});
+              }
             },
             styleSheet: _style,
           )],

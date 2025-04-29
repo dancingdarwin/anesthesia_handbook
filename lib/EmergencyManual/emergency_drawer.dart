@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
+// TODO: Draw entries from emergency_topics.dart
 class EmergencyDrawer extends StatelessWidget {
   const EmergencyDrawer({super.key});
 

@@ -1,3 +1,4 @@
+import 'package:anesthesia_handbook/Calculators/calculator_scaffold.dart';
 import 'package:anesthesia_handbook/Calculators/equipment.dart';
 import 'package:anesthesia_handbook/Calculators/patient_demo.dart';
 import 'package:anesthesia_handbook/util.dart';
@@ -26,6 +27,8 @@ class DemoWidget extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
+    // TODO: Default values from patientState
+    final Patient patientState = ref.watch(patientDemoProvider);
     _textController.value = TextEditingValue(text: initialVal);
     return Column(
       children: [
@@ -332,23 +335,26 @@ class DemographicsPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final ThemeData theme = Theme.of(context);
-    return Scaffold(
-      appBar: AppBar(
-        centerTitle: true,
-        title: Text(
-          'Patient Demographics', style: TextStyle(color: theme.colorScheme.onPrimary),
-        ),
-        backgroundColor: theme.colorScheme.primary,
-      ),
-      body: SafeArea(
-        child: ListView(
-          children: const [
-            PatientWidget(),
-            AirwayEquipment(),
-            VascularEquipment()
-          ]
-        ),
+    return const CalculatorScaffold(
+      title: 'Body Composition',
+      child: PatientWidget(),
+    );
+  }
+}
+
+class EquipmentPage extends StatelessWidget {
+  const EquipmentPage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return CalculatorScaffold(
+      title: 'Equipment',
+      child: ListView(
+        children: const [
+          PatientWidget(),
+          AirwayEquipment(),
+          VascularEquipment()
+        ]
       ),
     );
   }

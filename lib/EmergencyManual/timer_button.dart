@@ -141,9 +141,13 @@ class VFButtons extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Row(
       children: [
+        Spacer(flex: 1),
         CPRButton(),
+        Spacer(flex: 2),
         EpiButton(),
+        Spacer(flex: 2),
         ShockButton(),
+        Spacer(flex: 1),
       ],
     );
   }

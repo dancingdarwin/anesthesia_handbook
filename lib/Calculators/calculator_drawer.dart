@@ -3,6 +3,7 @@ import 'package:go_router/go_router.dart';
 
 class CalculatorDrawer extends StatelessWidget {
   const CalculatorDrawer({super.key});
+  
 
   @override
   Widget build(BuildContext context) {
@@ -12,18 +13,23 @@ class CalculatorDrawer extends StatelessWidget {
       children: [
         ListTile(
           leading: const Icon(Icons.home),
-          title: const Text('Emergency Manual Home'),
-          onTap: () {context.push('/emergency');},
+          title: const Text('Calculators Home'),
+          onTap: () {context.push('/calculator');},
         ),
         ListTile(
-          leading: const Icon(Icons.heart_broken),
-          title: const Text('ACLS - Asystole/PEA'),
-          onTap: () {context.pushNamed('emergencypage',pathParameters: {'pageTitle': 'ACLS-AsystolePEA'});},
+          leading: const Icon(Icons.accessibility_new),
+          title: const Text('Body Composition'),
+          onTap: () {context.push('/calculator/bodycomp');},
         ),
         ListTile(
-          leading: const Icon(Icons.heart_broken),
-          title: const Text('ACLS - VFib/VT'),
-          onTap: () {context.pushNamed('emergencypage',pathParameters: {'pageTitle': 'ACLS-VFVT'});},
+          leading: const Icon(Icons.construction),
+          title: const Text('Equipment'),
+          onTap: () {context.push('/calculator/equipment');},
+        ),
+        ListTile(
+          leading: const Icon(Icons.water_drop),
+          title: const Text('Fluids/Blood'),
+          onTap: () {context.push('/calculator/fluids');},
         ),
       ],),
     );

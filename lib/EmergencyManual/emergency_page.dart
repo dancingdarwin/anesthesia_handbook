@@ -65,10 +65,22 @@ class _EmergencyPageState extends State<EmergencyPage> {
     );
 
     _emergencyPage = switch (widget.pageTitle) {
+      // TODO: Add navigation buttons for H's and T's
       'ACLS-AsystolePEA' => Column(
         children: [
           const SizedBox(height: 10),
           const PEAButtons(),
+          const SizedBox(height: 10),
+          Expanded(child: _allCards,),
+          const SizedBox(height: 5),
+          const MainTimer(),
+          const SizedBox(height: 5),
+        ],
+      ),
+      'ACLS-VFVT' => Column(
+        children: [
+          const SizedBox(height: 10),
+          const VFButtons(),
           const SizedBox(height: 10),
           Expanded(child: _allCards,),
           const SizedBox(height: 5),
@@ -116,6 +128,12 @@ class _EmergencyPageState extends State<EmergencyPage> {
           _barTitle, style: TextStyle(color: theme.colorScheme.onError),
         ),
         backgroundColor: theme.colorScheme.error,
+        leading: InkWell(
+          onTap: () {
+            Navigator.pop(context);
+          },
+          child: const Icon(Icons.arrow_back, color: Colors.white),
+        ),
       ),
       drawer: const EmergencyDrawer(),
       drawerEdgeDragWidth: MediaQuery.of(context).size.width,
