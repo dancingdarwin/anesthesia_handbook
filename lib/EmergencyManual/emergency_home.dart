@@ -29,7 +29,14 @@ class _EmergencyHomeState extends State<EmergencyHome> {
   final _controller = TextEditingController();
 
   /// Sherlock Instance for searching
-  final Sherlock _sherlock = Sherlock(elements: emergencyTopics);
+  final Sherlock _sherlock = Sherlock(
+    elements: emergencyTopics,
+    priorities: {
+      'name': 3,
+      'tags': 2,
+      'pageTitle': 2,
+    }
+  );
 
   /// GridView of TileButtons
   Widget _buttonGrid = GridView.extent(
@@ -84,8 +91,9 @@ class _EmergencyHomeState extends State<EmergencyHome> {
   }
 
   void generateTileButtons() {
+    List<Widget> allButtons = [];
     /// Generates a GridView of TileButtons based on list of scenarios to display
-    List<Widget> allButtons = _toBeListed.map(
+    allButtons = _toBeListed.map(
       (topic) => TileButton(
         onPressed: () {goEmergencyPage(context, topic['pageTitle']);},
         icon: topic['icon'],
@@ -95,6 +103,7 @@ class _EmergencyHomeState extends State<EmergencyHome> {
         labelColor: topic['iconColor'],
       ),
     ).toList();
+    
 
     _buttonGrid = GridView.extent(
       primary: false,
@@ -115,11 +124,19 @@ class _EmergencyHomeState extends State<EmergencyHome> {
     } else {
       /// Searches for the emergency topics using Sherlock
       List<Result> searchResults = await _sherlock.search(input: input); 
-
-      setState(() {          
-        _toBeListed = searchResults.sorted().unwrap();
-        generateTileButtons();
-      });
+      if (searchResults.isNotEmpty) {
+        /// If search results are not empty, set the list to the search results
+        setState(() {
+          _toBeListed = searchResults.sorted().unwrap();
+          generateTileButtons();
+        });
+      } else {
+        /// If no search results, set the list to an empty list
+        setState(() {
+          _toBeListed = [];
+          generateTileButtons();
+        });
+      }
     }
 
   }
