@@ -16,7 +16,7 @@ class EmergencyHome extends StatefulWidget {
 class _EmergencyHomeState extends State<EmergencyHome> {
   /// Displays the Emergency Page with a list of all scenarios with a search bar
   
-  // TODO: Make responsive - if screen is small, make the gridview scrollable
+  // TODO: Make responsive - if screen is small, into a ListView
 
   /// List of Scenarios to display (initialized as every scenario,
   /// but can be replaced by search results)

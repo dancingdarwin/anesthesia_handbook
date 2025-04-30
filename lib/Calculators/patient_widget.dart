@@ -6,14 +6,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-class DemoWidget extends ConsumerWidget {
+class DemoWidget extends ConsumerStatefulWidget {
   final _textController = TextEditingController();
   final _unitsController = TextEditingController();
 
-  late final String name;
-  late final List<String> units;
-  late final String defaultUnit;
-  late final String initialVal;
+  final String name;
+  final List<String> units;
+  final String defaultUnit;
+  final String initialVal;
 
   late final List<DropdownMenuEntry> dropdownMenuEntries;
 
@@ -21,15 +21,33 @@ class DemoWidget extends ConsumerWidget {
     dropdownMenuEntries = units.map((unit) => DropdownMenuEntry(value: unit, label: unit)).toList();
   }
 
-  void update(WidgetRef ref) {
-    ref.read(patientDemoProvider.notifier).setDemo(_textController.text, _unitsController.text, name);
+  @override
+  ConsumerState<DemoWidget> createState() => _DemoWidgetState();
+}
+
+class _DemoWidgetState extends ConsumerState<DemoWidget> {
+  bool initialized = false;
+
+  @override
+  void initState() {
+    super.initState();  
+  }
+
+  void update() {
+    ref.read(patientDemoProvider.notifier).setDemo(widget._textController.text, widget._unitsController.text, widget.name);
   }
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
-    // TODO: Default values from patientState
+  Widget build(BuildContext context) {
     final Patient patientState = ref.watch(patientDemoProvider);
-    _textController.value = TextEditingValue(text: initialVal);
+    final Map<String,dynamic> patientDemo = patientState.toMap();
+    // Check if the text controller has been initialized
+    if (!initialized) {
+      // Set the initial value of the text controller to the current value in the state
+      widget._textController.value = TextEditingValue(text: patientDemo[widget.name].toString());
+      initialized = true;
+    }
+
     return Column(
       children: [
         Row(
@@ -37,23 +55,22 @@ class DemoWidget extends ConsumerWidget {
             SizedBox(
               width: 60,
               child: TextField(
-                controller: _textController,
+                controller: widget._textController,
                 keyboardType: TextInputType.number,
-                inputFormatters: [FilteringTextInputFormatter.digitsOnly],
                 maxLines: 1,
                 maxLengthEnforcement: MaxLengthEnforcement.enforced,
                 decoration: InputDecoration(
-                  labelText: name,
+                  labelText: widget.name,
                 ),
-                onChanged: (value) => update(ref),
+                onChanged: (value) => update(),
               ),
             ),
             const SizedBox(width: 10,),
             DropdownMenu(
-              controller: _unitsController,
-              dropdownMenuEntries: dropdownMenuEntries,
-              initialSelection: defaultUnit,
-              onSelected: (value) => update(ref),
+              controller: widget._unitsController,
+              dropdownMenuEntries: widget.dropdownMenuEntries,
+              initialSelection: widget.defaultUnit,
+              onSelected: (value) => update(),
             )
           ],
         )
@@ -62,17 +79,39 @@ class DemoWidget extends ConsumerWidget {
   }
 }
 
-class SexWidget extends ConsumerWidget {
+class SexWidget extends ConsumerStatefulWidget {
   final _textController = TextEditingController();
 
   SexWidget({super.key});
 
+  @override
+  ConsumerState<SexWidget> createState() => _SexWidgetState();
+}
+
+class _SexWidgetState extends ConsumerState<SexWidget> {
+  bool initialized = false;
+
+  @override
+  void initState() {
+    super.initState();
+  }
+
   void update(WidgetRef ref) {
-    ref.read(patientDemoProvider.notifier).setDemo(_textController.text, '', 'Sex');
+    ref.read(patientDemoProvider.notifier).setDemo(widget._textController.text, '', 'Sex');
   }
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  Widget build(BuildContext context) {
+    final Patient patientState = ref.watch(patientDemoProvider);
+    final Map<String,dynamic> patientDemo = patientState.toMap();
+
+    // Check if the text controller has been initialized
+    if (!initialized) {
+      // Set the initial value of the text controller to the current value in the state
+      widget._textController.value = TextEditingValue(text: patientDemo['Sex']);
+      initialized = true;
+    }
+
     return Column(
       children: [
         Row(
@@ -81,8 +120,7 @@ class SexWidget extends ConsumerWidget {
             const SizedBox(width: 20,),
             // Weight Input
             DropdownMenu(
-              controller: _textController,
-              initialSelection: 'M',
+              controller: widget._textController,
               dropdownMenuEntries: const [
                 DropdownMenuEntry(value: 'M', label: 'M'),
                 DropdownMenuEntry(value: 'F', label: 'F'),

@@ -47,7 +47,7 @@ class _EmergencyCardState extends State<EmergencyCard> {
                 // Open the link in a webview
                 launchURL(href);
               } else{
-              context.pushNamed('emergencypage',pathParameters: {'pageTitle': href as String});
+              context.pushNamed('emergencypage',pathParameters: {'pageTitle': href});
               }
             },
             styleSheet: _style,

@@ -3,7 +3,7 @@
 **NB**: As with any decision support tool, clinicians using this app should use their own clinical judgment and decision making for patient management.
 
 ## Contributors
-* Jeffrey Wang, MD, PhD (Conception, App Design/Programming)
+* Jeffrey Wang, MD, PhD (Conception, App Design, Programming, Content)
 * Shirley Mo, MD (UX Design, Feedback)
 * Daniel Bauman, DO (Content)
 * Justin Holbrook, MD (Content)

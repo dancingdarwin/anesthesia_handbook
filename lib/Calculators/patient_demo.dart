@@ -101,6 +101,15 @@ class Patient {
     }
   }
 
+  Map<String,dynamic> toMap() {
+    return {
+      'Age': age,
+      'Weight': weight,
+      'Height': height,
+      'Sex': sex,
+    };
+  }
+
   /// Calculates whether the patient belongs to the specific population.
   /// If not, it returns -1. If it does, then it returns the number of variables
   /// in the population definition, which should correlate with specificity of the population.
