@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:go_router/go_router.dart';
 
 class CalculatorDrawer extends StatelessWidget {
@@ -30,6 +31,11 @@ class CalculatorDrawer extends StatelessWidget {
           leading: const Icon(Icons.water_drop),
           title: const Text('Fluids/Blood'),
           onTap: () {context.push('/calculator/fluids');},
+        ),
+        ListTile(
+          leading: const Icon(FontAwesomeIcons.syringe),
+          title: const Text('Insulin'),
+          onTap: () {context.push('/calculator/insulin');},
         ),
       ],),
     );

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:go_router/go_router.dart';
 import '../util.dart';
 import 'calculator_scaffold.dart';
@@ -49,6 +50,14 @@ class CalculatorHome extends StatelessWidget {
               backgroundColor: theme.colorScheme.error,
               iconColor: theme.colorScheme.onError,
               labelColor: theme.colorScheme.onError,
+            ),
+            TileButton(
+              onPressed: () {context.go('/calculator/insulin');},
+              icon: FontAwesomeIcons.syringe,
+              label: 'Insulin',
+              backgroundColor: Colors.green,
+              iconColor: Colors.white,
+              labelColor: Colors.white,
             ),
           ]
         )
