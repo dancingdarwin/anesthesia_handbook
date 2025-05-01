@@ -164,10 +164,7 @@ class _InsulinState extends State<Insulin> {
       color: Colors.green,
       heading: 'Insulin Drip',
       initiallyExpanded: true,
-      child: Row(
-        children: [
-          const SizedBox(width: 10,),
-          Column(children: [
+      child: Column(children: [
             SizedBox(
               width: 150,
               child: DropdownButton(
@@ -213,8 +210,7 @@ class _InsulinState extends State<Insulin> {
               ),
             ),
             
-          ],),
-          const SizedBox(width: 10,),
+          const SizedBox(height: 10,),
           DataTable(
             rows: [
               DataRow(cells: [const DataCell(Text('Bolus')), DataCell(Text(instructions[0]))]),
