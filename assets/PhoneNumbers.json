@@ -1,0 +1,1199 @@
+[
+  {
+    "Entity": "Anesthesia Tech Emergency Line",
+    "Phone Number": "443-301-8291",
+    "Tags": "CCT"
+  },
+  {
+    "Entity": "Anesthesia Tech Supervisor",
+    "Phone Number": "667-776-4663",
+    "Tags": "cct"
+  },
+  {
+    "Entity": "Bayview A2W",
+    "Phone Number": "410-550-0326",
+    "Tags": "BMC"
+  },
+  {
+    "Entity": "Bayview A2W Charge RN",
+    "Phone Number": "410-550-0839",
+    "Tags": "BMC"
+  },
+  {
+    "Entity": "Bayview ED",
+    "Phone Number": "410-550-0352",
+    "Tags": "BMC Emergency Department dept ER"
+  },
+  {
+    "Entity": "Bayview Environmental Services",
+    "Phone Number": "410-550-0824",
+    "Tags": "EVS janitor custodian sheets change call room"
+  },
+  {
+    "Entity": "Bayview ICU Burn",
+    "Phone Number": "410-550-0890",
+    "Tags": "BMC Critical Care"
+  },
+  {
+    "Entity": "Bayview L&D Anes Attending",
+    "Phone Number": "410-550-0990",
+    "Tags": "Bayview BMC OB Obstetrics labor and delivery"
+  },
+  {
+    "Entity": "Bayview L&D Charge RN",
+    "Phone Number": "410-550-3387",
+    "Tags": "BMC ob labor and delivery"
+  },
+  {
+    "Entity": "Bayview L&D Front Desk",
+    "Phone Number": "410-550-0328",
+    "Tags": "BMC ob labor and delivery"
+  },
+  {
+    "Entity": "Bayview Lab",
+    "Phone Number": "410-550-0659",
+    "Tags": "BMC laboratory"
+  },
+  {
+    "Entity": "Bayview OR Coordinator",
+    "Phone Number": "410-550-3482",
+    "Tags": "BMC"
+  },
+  {
+    "Entity": "Bayview OR Desk",
+    "Phone Number": "410-550-0420",
+    "Tags": "BMC"
+  },
+  {
+    "Entity": "Bayview OR Tech Weekday",
+    "Phone Number": "410-550-8583",
+    "Tags": "bmc anesthesia tech cct"
+  },
+  {
+    "Entity": "Bayview OR Tech Weekend",
+    "Phone Number": "410-550-3481",
+    "Tags": "bmc anesthesia tech cct"
+  },
+  {
+    "Entity": "Bayview PACU",
+    "Phone Number": "410-550-1942",
+    "Tags": "bmc"
+  },
+  {
+    "Entity": "Bayview Pharmacy",
+    "Phone Number": "410-550-0958",
+    "Tags": "BMC"
+  },
+  {
+    "Entity": "Bayview Radiology",
+    "Phone Number": "410-550-5096",
+    "Tags": "BMC xray ct mri"
+  },
+  {
+    "Entity": "Bayview SICU",
+    "Phone Number": "410-550-0565",
+    "Tags": "surgical critical care"
+  },
+  {
+    "Entity": "Bayview Ultrasound",
+    "Phone Number": "410-550-5730",
+    "Tags": "bmc"
+  },
+  {
+    "Entity": "Bed Management",
+    "Phone Number": "410-502-2337"
+  },
+  {
+    "Entity": "Blood Bank",
+    "Phone Number": "410-955-6580",
+    "Tags": "Transfusion prbc ffp cryo transfuse mtp"
+  },
+  {
+    "Entity": "BMC Blood Bank",
+    "Phone Number": "410-550-0656",
+    "Tags": "Bayview transfuse transfusion"
+  },
+  {
+    "Entity": "CCU",
+    "Phone Number": "410-955-5572",
+    "Tags": "Cardiac critical care cards imc"
+  },
+  {
+    "Entity": "Cell Saver",
+    "Phone Number": "410-955-8503",
+    "Tags": "perfusion perfusionist"
+  },
+  {
+    "Entity": "CIP Phone 1",
+    "Phone Number": "(410) 585-4396",
+    "Tags": "HTRIP ICU intensivist critical care"
+  },
+  {
+    "Entity": "CIP Phone 2",
+    "Phone Number": "410-585-4686",
+    "Tags": "ICU HTRIP intensivist critical care"
+  },
+  {
+    "Entity": "Code/RRT",
+    "Phone Number": "410-955-4444",
+    "Tags": "Blue Rapid response team HTRIP"
+  },
+  {
+    "Entity": "Coordinator CRNA",
+    "Phone Number": "667-776-4731"
+  },
+  {
+    "Entity": "Coordinator IR",
+    "Phone Number": "410-614-5094",
+    "Tags": "hell interventional radiology"
+  },
+  {
+    "Entity": "Coordinator Peds/pDART",
+    "Phone Number": "443-467-8672",
+    "Tags": "difficult airway dart peds pediatrics"
+  },
+  {
+    "Entity": "Critical Care Lab",
+    "Phone Number": "410-955-6171",
+    "Tags": "5th fifth floor laboratory"
+  },
+  {
+    "Entity": "CVSICU",
+    "Phone Number": "410-955-4826",
+    "Tags": "cardiovascular cards cardiac critical care"
+  },
+  {
+    "Entity": "DART",
+    "Phone Number": "667-776-4659",
+    "Tags": "difficult airway ert rrt rapid response code"
+  },
+  {
+    "Entity": "Endo Attending A",
+    "Phone Number": "667-776-4733",
+    "Tags": "endoscopy gi bronch pulm"
+  },
+  {
+    "Entity": "Endo Attending B",
+    "Phone Number": "667-776-4734",
+    "Tags": "endoscopy gi bronch pulm"
+  },
+  {
+    "Entity": "Endo Attending C",
+    "Phone Number": "667-776-4735",
+    "Tags": "endoscopy gi bronch pulm"
+  },
+  {
+    "Entity": "Endo OR Charge RN",
+    "Phone Number": "667-776-6742",
+    "Tags": "endoscopy gi bronch pulm"
+  },
+  {
+    "Entity": "Endo PACU Charge RN",
+    "Phone Number": "667-776-6743",
+    "Tags": "endoscopy gi bronch pulm"
+  },
+  {
+    "Entity": "Endo Pre-op Charge RN",
+    "Phone Number": "667-776-6744",
+    "Tags": "endoscopy gi bronch pulm"
+  },
+  {
+    "Entity": "Facilities/Environmental Services",
+    "Phone Number": "410-955-8300",
+    "Tags": "EVS janitor custodian sheets change call room"
+  },
+  {
+    "Entity": "HAL",
+    "Phone Number": "410-955-9444",
+    "Tags": "hospital access line transfer"
+  },
+  {
+    "Entity": "IT Epic Help",
+    "Phone Number": "410-614-3742",
+    "Tags": "password reset computer"
+  },
+  {
+    "Entity": "IT General Help",
+    "Phone Number": "410-955-4357",
+    "Tags": "password reset computer"
+  },
+  {
+    "Entity": "IT Pyxis Help",
+    "Phone Number": "410-502-3451",
+    "Tags": "medications meds cart tech support"
+  },
+  {
+    "Entity": "JHH Operator",
+    "Phone Number": "410-955-5000"
+  },
+  {
+    "Entity": "JHOC Control Center",
+    "Phone Number": "410-955-1496",
+    "Tags": "cc"
+  },
+  {
+    "Entity": "JHOC CPO Work Room Line 1",
+    "Phone Number": "410-955-1313"
+  },
+  {
+    "Entity": "JHOC CPO Work Room Line 2",
+    "Phone Number": "410-502-2999"
+  },
+  {
+    "Entity": "JHOC OR #1 Anes",
+    "Phone Number": "410-955-1389"
+  },
+  {
+    "Entity": "JHOC OR #1 RN",
+    "Phone Number": "410-955-0758"
+  },
+  {
+    "Entity": "JHOC OR #2 Anes",
+    "Phone Number": "410-955-1388"
+  },
+  {
+    "Entity": "JHOC OR #2 RN",
+    "Phone Number": "410-955-0818"
+  },
+  {
+    "Entity": "JHOC OR #3 Anes",
+    "Phone Number": "410-502-1915"
+  },
+  {
+    "Entity": "JHOC OR #3 RN",
+    "Phone Number": "410-955-0819"
+  },
+  {
+    "Entity": "JHOC OR #4 Anes",
+    "Phone Number": "410-502-1916"
+  },
+  {
+    "Entity": "JHOC OR #4 RN",
+    "Phone Number": "410-955-0822"
+  },
+  {
+    "Entity": "JHOC OR #5 Anes",
+    "Phone Number": "410-502-1917"
+  },
+  {
+    "Entity": "JHOC OR #5 RN",
+    "Phone Number": "410-955-0823"
+  },
+  {
+    "Entity": "JHOC OR #6 Anes",
+    "Phone Number": "410-502-1918"
+  },
+  {
+    "Entity": "JHOC OR #6 RN",
+    "Phone Number": "410-955-0824"
+  },
+  {
+    "Entity": "JHOC OR #7 Anes",
+    "Phone Number": "410-502-1920"
+  },
+  {
+    "Entity": "JHOC OR #7 RN",
+    "Phone Number": "410-955-1140"
+  },
+  {
+    "Entity": "JHOC OR #8 Anes",
+    "Phone Number": "410-502-1919"
+  },
+  {
+    "Entity": "JHOC OR #8 RN",
+    "Phone Number": "410-955-1141"
+  },
+  {
+    "Entity": "JHOC OR Front Desk",
+    "Phone Number": "410-955-9562",
+    "Tags": "nursing nurse coordinator"
+  },
+  {
+    "Entity": "JHOC PACU",
+    "Phone Number": "410-955-1364"
+  },
+  {
+    "Entity": "JHOC Pre-op",
+    "Phone Number": "410-955-1352",
+    "Tags": "PACU Charge Nurse RN"
+  },
+  {
+    "Entity": "L&D Anesthesia Attending",
+    "Phone Number": "667-776-6177",
+    "Tags": "ob labor and delivery"
+  },
+  {
+    "Entity": "L&D Anesthesia Fellow Backup",
+    "Phone Number": "667-776-6201",
+    "Tags": "ob labor and delivery"
+  },
+  {
+    "Entity": "L&D Anesthesia Fellow Primary",
+    "Phone Number": "667-776-6164",
+    "Tags": "ob labor and delivery"
+  },
+  {
+    "Entity": "L&D Anesthesia Resident",
+    "Phone Number": "667-776-6143",
+    "Tags": "ob labor and delivery"
+  },
+  {
+    "Entity": "L&D Charge RN",
+    "Phone Number": "667-776-6746",
+    "Tags": "ob labor and delivery"
+  },
+  {
+    "Entity": "L&D OR #1 Anes",
+    "Phone Number": "410-955-0553",
+    "Tags": "ob labor and delivery"
+  },
+  {
+    "Entity": "L&D OR #1 RN",
+    "Phone Number": "410-502-5304",
+    "Tags": "labor and delivery ob"
+  },
+  {
+    "Entity": "L&D OR #2 Anes",
+    "Phone Number": "410-955-0536",
+    "Tags": "ob labor and delivery"
+  },
+  {
+    "Entity": "L&D OR #2 RN",
+    "Phone Number": "410-502-5303",
+    "Tags": "ob labor and delivery"
+  },
+  {
+    "Entity": "L&D OR #3 Anes",
+    "Phone Number": "410-502-5305",
+    "Tags": "ob labor and delivery"
+  },
+  {
+    "Entity": "L&D OR #3 RN",
+    "Phone Number": "443-287-9709",
+    "Tags": "ob labor and delivery"
+  },
+  {
+    "Entity": "Lab Core",
+    "Phone Number": "410-955-1921",
+    "Tags": "labs laboratory"
+  },
+  {
+    "Entity": "Lab Weinberg",
+    "Phone Number": "410-502-1128",
+    "Tags": "WBG"
+  },
+  {
+    "Entity": "MICU Charge RN",
+    "Phone Number": "667-776-6780",
+    "Tags": "medical icu critical care"
+  },
+  {
+    "Entity": "MPCU Charge RN",
+    "Phone Number": "667-776-6754",
+    "Tags": "IMC"
+  },
+  {
+    "Entity": "MRI Coordinator",
+    "Phone Number": "410-955-8353",
+    "Tags": "radiology rads"
+  },
+  {
+    "Entity": "NCCU",
+    "Phone Number": "410-955-2560",
+    "Tags": "Neuro ICU Critical Care Neurosciences nsgy neurosurgery neurology"
+  },
+  {
+    "Entity": "Needlestick",
+    "Phone Number": "410-955-7849",
+    "Tags": "STIX needle stick"
+  },
+  {
+    "Entity": "NICU Charge RN",
+    "Phone Number": "667-776-6738",
+    "Tags": "neonatology"
+  },
+  {
+    "Entity": "Perfusion",
+    "Phone Number": "667-776-4729",
+    "Tags": "Perfusionist"
+  },
+  {
+    "Entity": "Perfusion ECMO",
+    "Phone Number": "667-776-4727",
+    "Tags": "Perfusionist"
+  },
+  {
+    "Entity": "Perfusion Pump Room",
+    "Phone Number": "667-776-4728",
+    "Tags": "Perfusionist cpb bypass"
+  },
+  {
+    "Entity": "Pharmacy Arcade",
+    "Phone Number": "443-287-9200",
+    "Tags": "Meds medication outpatient"
+  },
+  {
+    "Entity": "Pharmacy Inpatient",
+    "Phone Number": "410-955-6150",
+    "Tags": "Meds medication"
+  },
+  {
+    "Entity": "Pharmacy Peds",
+    "Phone Number": "410-955-5926",
+    "Tags": "4th fourth floor peds pediatrics meds medication"
+  },
+  {
+    "Entity": "PICC Team Adult",
+    "Phone Number": "667-776-6725",
+    "Tags": "VAT"
+  },
+  {
+    "Entity": "PICU Charge RN",
+    "Phone Number": "667-776-6736",
+    "Tags": "peds pediatric 4th fourth floor critical care"
+  },
+  {
+    "Entity": "Post-Exposure Prophylaxis",
+    "Phone Number": "888-448-4911",
+    "Tags": "needlestick stix pep"
+  },
+  {
+    "Entity": "RT Adult",
+    "Phone Number": "667-776-6726",
+    "Tags": "respiratory"
+  },
+  {
+    "Entity": "Scrub Machines",
+    "Phone Number": "410-955-5172"
+  },
+  {
+    "Entity": "Security",
+    "Phone Number": "410-955-5585",
+    "Tags": "police guard"
+  },
+  {
+    "Entity": "SICU Charge RN",
+    "Phone Number": "667-776-6790",
+    "Tags": "surgical critical care"
+  },
+  {
+    "Entity": "SICU Front Desk",
+    "Phone Number": "410-614-1915",
+    "Tags": "surgical critical care"
+  },
+  {
+    "Entity": "Translation Services",
+    "Phone Number": "410-614-4685",
+    "Tags": "interpreter spanish chinese mandarin language line solutions"
+  },
+  {
+    "Entity": "VAT",
+    "Phone Number": "667-776-6764",
+    "Tags": "vascular access team picc"
+  },
+  {
+    "Entity": "WBG Code Call Resident",
+    "Phone Number": "667-776-6103",
+    "Tags": "weinberg"
+  },
+  {
+    "Entity": "WBG Control Center",
+    "Phone Number": "410-502-1241",
+    "Tags": "Weinberg cc"
+  },
+  {
+    "Entity": "WBG OR #1 Anes",
+    "Phone Number": "410-502-1209",
+    "Tags": "Weinberg"
+  },
+  {
+    "Entity": "WBG OR #1 RN",
+    "Phone Number": "410-502-1210",
+    "Tags": "Weinberg"
+  },
+  {
+    "Entity": "WBG OR #10 Anes",
+    "Phone Number": "410-502-1201",
+    "Tags": "weinberg"
+  },
+  {
+    "Entity": "WBG OR #10 RN",
+    "Phone Number": "410-502-1202",
+    "Tags": "Weinberg cc"
+  },
+  {
+    "Entity": "WBG OR #11 Anes",
+    "Phone Number": "410-502-1187",
+    "Tags": "Weinberg"
+  },
+  {
+    "Entity": "WBG OR #11 RN",
+    "Phone Number": "410-502-1188",
+    "Tags": "weinberg"
+  },
+  {
+    "Entity": "WBG OR #12 Anes",
+    "Phone Number": "410-502-1199",
+    "Tags": "weinberg"
+  },
+  {
+    "Entity": "WBG OR #12 RN",
+    "Phone Number": "410-502-1200",
+    "Tags": "weinberg"
+  },
+  {
+    "Entity": "WBG OR #14 Anes",
+    "Phone Number": "410-502-1197",
+    "Tags": "Weinberg"
+  },
+  {
+    "Entity": "WBG OR #14 RN",
+    "Phone Number": "410-502-1198",
+    "Tags": "Weinberg"
+  },
+  {
+    "Entity": "WBG OR #15 Anes",
+    "Phone Number": "410-502-1185",
+    "Tags": "Weinberg cc"
+  },
+  {
+    "Entity": "WBG OR #15 RN",
+    "Phone Number": "410-502-1186",
+    "Tags": "Weinberg cc"
+  },
+  {
+    "Entity": "WBG OR #16 Anes",
+    "Phone Number": "410-502-1195",
+    "Tags": "Weinberg"
+  },
+  {
+    "Entity": "WBG OR #16 RN",
+    "Phone Number": "410-502-1196",
+    "Tags": "Weinberg"
+  },
+  {
+    "Entity": "WBG OR #17 Anes",
+    "Phone Number": "410-502-1183",
+    "Tags": "weinberg"
+  },
+  {
+    "Entity": "WBG OR #17 RN",
+    "Phone Number": "410-502-1184",
+    "Tags": "Weinberg"
+  },
+  {
+    "Entity": "WBG OR #2 Anes",
+    "Phone Number": "410-502-1217",
+    "Tags": "Weinberg"
+  },
+  {
+    "Entity": "WBG OR #2 RN",
+    "Phone Number": "410-502-1218",
+    "Tags": "Weinberg cc"
+  },
+  {
+    "Entity": "WBG OR #3 Anes",
+    "Phone Number": "410-502-1207",
+    "Tags": "Weinberg"
+  },
+  {
+    "Entity": "WBG OR #3 RN",
+    "Phone Number": "410-502-1208",
+    "Tags": "Weinberg"
+  },
+  {
+    "Entity": "WBG OR #4 Anes",
+    "Phone Number": "410-502-1215",
+    "Tags": "weinberg"
+  },
+  {
+    "Entity": "WBG OR #4 RN",
+    "Phone Number": "410-502-1216",
+    "Tags": "Weinberg"
+  },
+  {
+    "Entity": "WBG OR #5 Anes",
+    "Phone Number": "410-502-1205",
+    "Tags": "Weinberg cc"
+  },
+  {
+    "Entity": "WBG OR #5 RN",
+    "Phone Number": "410-502-1206",
+    "Tags": "Weinberg cc"
+  },
+  {
+    "Entity": "WBG OR #6 Anes",
+    "Phone Number": "410-502-1213",
+    "Tags": "weinberg"
+  },
+  {
+    "Entity": "WBG OR #6 RN",
+    "Phone Number": "410-502-1214",
+    "Tags": "Weinberg"
+  },
+  {
+    "Entity": "WBG OR #7 Anes",
+    "Phone Number": "410-502-1203",
+    "Tags": "Weinberg cc"
+  },
+  {
+    "Entity": "WBG OR #7 RN",
+    "Phone Number": "410-502-1204",
+    "Tags": "Weinberg cc"
+  },
+  {
+    "Entity": "WBG OR #8 Anes",
+    "Phone Number": "410-502-1211",
+    "Tags": "weinberg"
+  },
+  {
+    "Entity": "WBG OR #8 RN",
+    "Phone Number": "410-502-1212",
+    "Tags": "Weinberg"
+  },
+  {
+    "Entity": "WBG OR #9 Anes",
+    "Phone Number": "410-502-1189",
+    "Tags": "Weinberg cc"
+  },
+  {
+    "Entity": "WBG OR #9 RN",
+    "Phone Number": "410-502-1190",
+    "Tags": "Weinberg cc"
+  },
+  {
+    "Entity": "WBG OR Coordinator",
+    "Phone Number": "667-776-6765",
+    "Tags": "weinberg"
+  },
+  {
+    "Entity": "WBG OR Front Desk",
+    "Phone Number": "410-502-1223",
+    "Tags": "Weinberg nursing nurse coordinator"
+  },
+  {
+    "Entity": "WBG PACU Charge RN",
+    "Phone Number": "667-776-6766",
+    "Tags": "Weinberg"
+  },
+  {
+    "Entity": "WBG PACU Resident",
+    "Phone Number": "667-776-6127",
+    "Tags": "WACU weinberg call"
+  },
+  {
+    "Entity": "WBG Pre-op Charge RN",
+    "Phone Number": "667-776-6767",
+    "Tags": "weinberg preop"
+  },
+  {
+    "Entity": "Weinberg Pharmacy",
+    "Phone Number": "410-955-8998",
+    "Tags": "Meds Medication outpatient"
+  },
+  {
+    "Entity": "WICU Charge RN",
+    "Phone Number": "667-776-6769",
+    "Tags": "Weinberg critical care nurse"
+  },
+  {
+    "Entity": "Wilmer Control Center",
+    "Phone Number": "410-955-4684",
+    "Tags": "ophtho hell optho eye"
+  },
+  {
+    "Entity": "Wilmer OR #1 Anes",
+    "Phone Number": "410-502-1280",
+    "Tags": "ophtho hell optho eye"
+  },
+  {
+    "Entity": "Wilmer OR #1 RN",
+    "Phone Number": "410-502-1550",
+    "Tags": "ophtho hell optho eye"
+  },
+  {
+    "Entity": "Wilmer OR #2 Anes",
+    "Phone Number": "410-502-1328",
+    "Tags": "ophtho hell optho eye"
+  },
+  {
+    "Entity": "Wilmer OR #2 RN",
+    "Phone Number": "410-502-1338",
+    "Tags": "ophtho hell optho eye"
+  },
+  {
+    "Entity": "Wilmer OR #3 Anes",
+    "Phone Number": "410-502-1322",
+    "Tags": "ophtho hell optho eye"
+  },
+  {
+    "Entity": "Wilmer OR #3 RN",
+    "Phone Number": "410-502-0667",
+    "Tags": "ophtho hell optho eye"
+  },
+  {
+    "Entity": "Wilmer OR #4 Anes",
+    "Phone Number": "410-614-3380",
+    "Tags": "ophtho hell optho eye"
+  },
+  {
+    "Entity": "Wilmer OR #4 RN",
+    "Phone Number": "410-502-0665",
+    "Tags": "ophtho hell optho eye"
+  },
+  {
+    "Entity": "Wilmer OR #5 Anes",
+    "Phone Number": "410-502-1278",
+    "Tags": "ophtho hell optho eye"
+  },
+  {
+    "Entity": "Wilmer OR #5 RN",
+    "Phone Number": "410-502-0666",
+    "Tags": "ophtho hell optho eye"
+  },
+  {
+    "Entity": "Wilmer OR #6 Anes",
+    "Phone Number": "410-502-1283",
+    "Tags": "ophtho hell optho eye"
+  },
+  {
+    "Entity": "Wilmer OR #6 RN",
+    "Phone Number": "410-502-1585",
+    "Tags": "ophtho hell optho eye"
+  },
+  {
+    "Entity": "Wilmer OR #7 Anes",
+    "Phone Number": "410-614-9947",
+    "Tags": "ophtho hell optho eye"
+  },
+  {
+    "Entity": "Wilmer OR #7 RN",
+    "Phone Number": "410-614-9953",
+    "Tags": "ophtho hell optho eye"
+  },
+  {
+    "Entity": "Wilmer PACU",
+    "Phone Number": "410-955-5547",
+    "Tags": "ophtho hell optho eye"
+  },
+  {
+    "Entity": "Wilmer Pre-op",
+    "Phone Number": "410-955-5720",
+    "Tags": "ophtho hell optho eye"
+  },
+  {
+    "Entity": "ZBOR3 Control Center Line 1",
+    "Phone Number": "410-955-4552",
+    "Tags": "3rd third floor zayed"
+  },
+  {
+    "Entity": "ZBOR3 Control Center Line 2",
+    "Phone Number": "410-614-2001",
+    "Tags": "CC"
+  },
+  {
+    "Entity": "ZBOR3 On Call Attending",
+    "Phone Number": "410-955-0459",
+    "Tags": "3rd third floor zayed"
+  },
+  {
+    "Entity": "ZBOR3 On Call CA2",
+    "Phone Number": "667-776-6129",
+    "Tags": "3rd third floor zayed"
+  },
+  {
+    "Entity": "ZBOR3 On Call CA3",
+    "Phone Number": "667-776-4732",
+    "Tags": "3rd third floor zayed"
+  },
+  {
+    "Entity": "ZBOR3 OR #301 Anes",
+    "Phone Number": "443-287-3860",
+    "Tags": "301 3rd third floor"
+  },
+  {
+    "Entity": "ZBOR3 OR #301 RN",
+    "Phone Number": "443-287-3859",
+    "Tags": "3rd third floor zayed"
+  },
+  {
+    "Entity": "ZBOR3 OR #302 Anes",
+    "Phone Number": "410-614-1390",
+    "Tags": "3rd third floor zayed"
+  },
+  {
+    "Entity": "ZBOR3 OR #302 RN",
+    "Phone Number": "443-287-5120",
+    "Tags": "3rd third floor 302"
+  },
+  {
+    "Entity": "ZBOR3 OR #303 Anes",
+    "Phone Number": "443-287-3865",
+    "Tags": "3rd third floor zayed"
+  },
+  {
+    "Entity": "ZBOR3 OR #303 RN",
+    "Phone Number": "443-287-3864",
+    "Tags": "3rd third floor zayed"
+  },
+  {
+    "Entity": "ZBOR3 OR #304 Anes",
+    "Phone Number": "410-614-1403",
+    "Tags": "3rd third floor zayed"
+  },
+  {
+    "Entity": "ZBOR3 OR #304 RN",
+    "Phone Number": "443-287-5116",
+    "Tags": "3rd third floor zayed"
+  },
+  {
+    "Entity": "ZBOR3 OR #305 Anes",
+    "Phone Number": "410-614-1401",
+    "Tags": "3rd third floor zayed"
+  },
+  {
+    "Entity": "ZBOR3 OR #305 RN",
+    "Phone Number": "443-287-5114",
+    "Tags": "3rd third floor zayed"
+  },
+  {
+    "Entity": "ZBOR3 OR #306 Anes",
+    "Phone Number": "410-614-1402",
+    "Tags": "3rd third floor zayed"
+  },
+  {
+    "Entity": "ZBOR3 OR #306 RN",
+    "Phone Number": "443-287-5115",
+    "Tags": "3rd third floor zayed"
+  },
+  {
+    "Entity": "ZBOR3 OR #307 Anes",
+    "Phone Number": "443-287-3868",
+    "Tags": "3rd third floor zayed"
+  },
+  {
+    "Entity": "ZBOR3 OR #307 RN",
+    "Phone Number": "443-287-3867",
+    "Tags": "3rd third floor zayed"
+  },
+  {
+    "Entity": "ZBOR3 OR #308 Anes",
+    "Phone Number": "410-614-1404",
+    "Tags": "3rd third floor zayed"
+  },
+  {
+    "Entity": "ZBOR3 OR #308 RN",
+    "Phone Number": "443-287-5117",
+    "Tags": "3rd third floor zayed"
+  },
+  {
+    "Entity": "ZBOR3 OR #309 Anes",
+    "Phone Number": "410-614-1407",
+    "Tags": "3rd third floor zayed"
+  },
+  {
+    "Entity": "ZBOR3 OR #309 RN",
+    "Phone Number": "410-614-1713",
+    "Tags": "3rd third floor zayed"
+  },
+  {
+    "Entity": "ZBOR3 OR #310 Anes",
+    "Phone Number": "410-614-1408",
+    "Tags": "3rd third floor zayed"
+  },
+  {
+    "Entity": "ZBOR3 OR #310 RN",
+    "Phone Number": "443-287-5126",
+    "Tags": "3rd third floor zayed"
+  },
+  {
+    "Entity": "ZBOR3 OR #311 Anes",
+    "Phone Number": "410-614-1397",
+    "Tags": "3rd third floor zayed"
+  },
+  {
+    "Entity": "ZBOR3 OR #311 RN",
+    "Phone Number": "443-287-5113",
+    "Tags": "3rd third floor zayed"
+  },
+  {
+    "Entity": "ZBOR3 OR #312 Anes",
+    "Phone Number": "410-614-1399",
+    "Tags": "3rd third floor zayed"
+  },
+  {
+    "Entity": "ZBOR3 OR #312 RN",
+    "Phone Number": "443-287-5112",
+    "Tags": "3rd third floor zayed"
+  },
+  {
+    "Entity": "ZBOR3 OR #314 Anes",
+    "Phone Number": "410-614-1400",
+    "Tags": "3rd third floor zayed"
+  },
+  {
+    "Entity": "ZBOR3 OR #314 RN",
+    "Phone Number": "410-614-2283",
+    "Tags": "3rd third floor zayed"
+  },
+  {
+    "Entity": "ZBOR3 OR #315 Anes",
+    "Phone Number": "410-614-1398",
+    "Tags": "3rd third floor zayed"
+  },
+  {
+    "Entity": "ZBOR3 OR #315 RN",
+    "Phone Number": "443-287-5111",
+    "Tags": "3rd third floor zayed"
+  },
+  {
+    "Entity": "ZBOR3 OR Coordinator",
+    "Phone Number": "667-776-4730",
+    "Tags": "3rd third floor zayed ca3 call"
+  },
+  {
+    "Entity": "ZBOR3 OR Desk",
+    "Phone Number": "667-776-6798",
+    "Tags": "3rd third floor front desk nursing coordinator"
+  },
+  {
+    "Entity": "ZBOR3 PACU Charge RN",
+    "Phone Number": "667-776-6792",
+    "Tags": "3rd third floor zayed pre-op"
+  },
+  {
+    "Entity": "ZBOR3 Pharmacy Critical Care Adult",
+    "Phone Number": "410-955-6505",
+    "Tags": "3rd third floor meds medication"
+  },
+  {
+    "Entity": "ZBOR3 Pre-op Charge RN",
+    "Phone Number": "667-776-6793",
+    "Tags": "3rd third floor zayed"
+  },
+  {
+    "Entity": "ZBOR4 Control Center",
+    "Phone Number": "443-287-2604",
+    "Tags": "Peds pediatrics 4th fourth floor"
+  },
+  {
+    "Entity": "ZBOR4 OR #401 Anes",
+    "Phone Number": "410-614-1392",
+    "Tags": "Peds pediatrics 4th fourth floor"
+  },
+  {
+    "Entity": "ZBOR4 OR #401 RN",
+    "Phone Number": "443-287-5122",
+    "Tags": "Peds pediatrics 4th fourth floor"
+  },
+  {
+    "Entity": "ZBOR4 OR #402 Anes",
+    "Phone Number": "410-614-1396",
+    "Tags": "Peds pediatrics 4th fourth floor"
+  },
+  {
+    "Entity": "ZBOR4 OR #402 RN",
+    "Phone Number": "410-502-7779",
+    "Tags": "Peds pediatrics 4th fourth floor"
+  },
+  {
+    "Entity": "ZBOR4 OR #403 Anes",
+    "Phone Number": "410-614-1395",
+    "Tags": "Peds pediatrics 4th fourth floor"
+  },
+  {
+    "Entity": "ZBOR4 OR #403 RN",
+    "Phone Number": "443-287-4134",
+    "Tags": "Peds pediatrics 4th fourth floor"
+  },
+  {
+    "Entity": "ZBOR4 OR #404 Anes",
+    "Phone Number": "410-614-1393",
+    "Tags": "Peds pediatrics 4th fourth floor"
+  },
+  {
+    "Entity": "ZBOR4 OR #404 RN",
+    "Phone Number": "443-287-5123",
+    "Tags": "Peds pediatrics 4th fourth floor"
+  },
+  {
+    "Entity": "ZBOR4 OR #405 Anes",
+    "Phone Number": "410-614-1394",
+    "Tags": "Peds pediatrics 4th fourth floor"
+  },
+  {
+    "Entity": "ZBOR4 OR #405 RN",
+    "Phone Number": "443-287-4138",
+    "Tags": "Peds pediatrics 4th fourth floor"
+  },
+  {
+    "Entity": "ZBOR4 OR #406 Anes",
+    "Phone Number": "410-614-1391",
+    "Tags": "Peds pediatrics 4th fourth floor"
+  },
+  {
+    "Entity": "ZBOR4 OR #406 RN",
+    "Phone Number": "443-287-5121",
+    "Tags": "Peds pediatrics 4th fourth floor"
+  },
+  {
+    "Entity": "ZBOR4 OR #407 Anes",
+    "Phone Number": "443-287-3871",
+    "Tags": "peds pediatrics 407 4th fourth floor"
+  },
+  {
+    "Entity": "ZBOR4 OR #407 RN",
+    "Phone Number": "443-287-3870",
+    "Tags": "Peds pediatrics 4th fourth floor"
+  },
+  {
+    "Entity": "ZBOR4 OR #408 Anes",
+    "Phone Number": "443-287-3874",
+    "Tags": "Peds pediatrics 4th fourth floor"
+  },
+  {
+    "Entity": "ZBOR4 OR #408 RN",
+    "Phone Number": "443-287-3873",
+    "Tags": "Peds pediatrics 4th fourth floor"
+  },
+  {
+    "Entity": "ZBOR4 OR #409 Anes",
+    "Phone Number": "410-502-8820",
+    "Tags": "Peds pediatrics 4th fourth floor"
+  },
+  {
+    "Entity": "ZBOR4 OR #409 RN",
+    "Phone Number": "410-955-2781",
+    "Tags": "peds pediatrics 4th fourth floor"
+  },
+  {
+    "Entity": "ZBOR4 OR #410 Anes",
+    "Phone Number": "443-287-3877",
+    "Tags": "peds pediatrics 410 4th fourth floor"
+  },
+  {
+    "Entity": "ZBOR4 OR #410 RN",
+    "Phone Number": "443-287-3876",
+    "Tags": "Peds pediatrics 4th fourth floor"
+  },
+  {
+    "Entity": "ZBOR4 OR #411 Anes",
+    "Phone Number": "410-614-1405",
+    "Tags": "410-614-1405 411 peds pediatrics 4th fourth floor"
+  },
+  {
+    "Entity": "ZBOR4 OR #411 RN",
+    "Phone Number": "410-502-9888",
+    "Tags": "Peds pediatrics 4th fourth floor"
+  },
+  {
+    "Entity": "ZBOR4 OR #412 Anes",
+    "Phone Number": "410-614-1406",
+    "Tags": "412 peds pediatrics 4th fourth floor"
+  },
+  {
+    "Entity": "ZBOR4 OR #412 RN",
+    "Phone Number": "443-287-5119",
+    "Tags": "Peds pediatrics 4th fourth floor"
+  },
+  {
+    "Entity": "ZBOR4 OR Front Desk",
+    "Phone Number": "667-776-6802",
+    "Tags": "4th fourth floor peds pediatrics nurse nursing"
+  },
+  {
+    "Entity": "ZBOR4 PACU Charge RN",
+    "Phone Number": "667-776-6794",
+    "Tags": "Peds pediatrics 4th fourth floor Pre-Op"
+  },
+  {
+    "Entity": "ZBOR4 Pre-op Charge RN",
+    "Phone Number": "667-776-6797",
+    "Tags": "Peds pediatrics 4th fourth floor PACU"
+  },
+  {
+    "Entity": "ZBOR4 Tech Peds",
+    "Phone Number": "667-776-4662",
+    "Tags": "cct pediatrics zbor4"
+  },
+  {
+    "Entity": "ZBOR5 Control Center",
+    "Phone Number": "443-287-2605",
+    "Tags": "5th fifth floor cards cardiac"
+  },
+  {
+    "Entity": "ZBOR5 OR #501 Anes",
+    "Phone Number": "443-287-3881",
+    "Tags": "cards cardiac fifth 5th floor zayed"
+  },
+  {
+    "Entity": "ZBOR5 OR #501 RN",
+    "Phone Number": "443-287-3880",
+    "Tags": "cards cardiac fifth 5th floor zayed"
+  },
+  {
+    "Entity": "ZBOR5 OR #502 Anes",
+    "Phone Number": "410-502-8819",
+    "Tags": "cards cardiac fifth 5th floor zayed"
+  },
+  {
+    "Entity": "ZBOR5 OR #502 RN",
+    "Phone Number": "410-955-6314",
+    "Tags": "5th fifth floor cards cardiac"
+  },
+  {
+    "Entity": "ZBOR5 OR #503 Anes",
+    "Phone Number": "443-287-3886",
+    "Tags": "cards cardiac fifth 5th floor zayed"
+  },
+  {
+    "Entity": "ZBOR5 OR #503 RN",
+    "Phone Number": "443-287-3885",
+    "Tags": "cards cardiac fifth 5th floor zayed"
+  },
+  {
+    "Entity": "ZBOR5 OR #504 Anes",
+    "Phone Number": "410-502-8825",
+    "Tags": "cards cardiac fifth 5th floor zayed"
+  },
+  {
+    "Entity": "ZBOR5 OR #504 RN",
+    "Phone Number": "410-955-7633",
+    "Tags": "cards cardiac fifth 5th floor zayed"
+  },
+  {
+    "Entity": "ZBOR5 OR #505 Anes",
+    "Phone Number": "443-287-3890",
+    "Tags": "cardiac cards 5th fifth floor"
+  },
+  {
+    "Entity": "ZBOR5 OR #505 RN",
+    "Phone Number": "443-287-3888",
+    "Tags": "cardiac cards 5th fifth floor"
+  },
+  {
+    "Entity": "ZBOR5 OR #506 Anes",
+    "Phone Number": "410-502-8821",
+    "Tags": "5th fifth floor cards cardiac"
+  },
+  {
+    "Entity": "ZBOR5 OR #506 RN",
+    "Phone Number": "410-955-7681",
+    "Tags": "5th fifth floor cards cardiac"
+  },
+  {
+    "Entity": "ZBOR5 OR Front Desk",
+    "Phone Number": "667-776-6803",
+    "Tags": "5th fifth floor cards cardiac"
+  },
+  {
+    "Entity": "ZBOR5 PACU Charge RN",
+    "Phone Number": "667-776-6796",
+    "Tags": "Cards Cardiac fifth floor"
+  },
+  {
+    "Entity": "ZBOR5 Pre-op",
+    "Phone Number": "667-776-6795",
+    "Tags": "Charge Nurse RN Cards Cardiac fifth 5th floor"
+  }
+]

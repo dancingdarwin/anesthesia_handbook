@@ -1,0 +1,178 @@
+[
+  {
+    "Item": "8th Floor Call Room (8211A)",
+    "Code": "1234",
+    "Tags": "L&D Labor and Delivery OB"
+  },
+  {
+    "Item": "Anesthesia Cart",
+    "Code": "4552"
+  },
+  {
+    "Item": "Bayview Anesthesia Cart",
+    "Code": "0245",
+    "Tags": "OR BMC"
+  },
+  {
+    "Item": "Bayview Epidural Cart",
+    "Code": "0245",
+    "Tags": "regional BMC"
+  },
+  {
+    "Item": "Bayview OR Anesthesia Workroom",
+    "Code": "2+4,5",
+    "Tags": "BMC tech supply equipment supplies"
+  },
+  {
+    "Item": "Bayview PCEA Pump Code",
+    "Code": "722 or 573",
+    "Tags": "BMC PCA"
+  },
+  {
+    "Item": "Bayview Pyxis Default Password",
+    "Code": "bayview",
+    "Tags": "bmc pharmacy drugs med"
+  },
+  {
+    "Item": "Bayview Pyxis Solo Waste",
+    "Code": "User: Anes, PW: waste",
+    "Tags": "narcotics bmc"
+  },
+  {
+    "Item": "CVSICU Dictation Room",
+    "Code": "4569",
+    "Tags": "computers"
+  },
+  {
+    "Item": "JHOC Central Pyxis",
+    "Code": "1543*",
+    "Tags": "meds medications pharmacy"
+  },
+  {
+    "Item": "JHOC Control Center",
+    "Code": "1655",
+    "Tags": "CC"
+  },
+  {
+    "Item": "L&D Water Area",
+    "Code": "5240",
+    "Tags": "ob"
+  },
+  {
+    "Item": "Mens Locker Room",
+    "Code": "1234",
+    "Tags": "Male"
+  },
+  {
+    "Item": "NCCU Fellow Room",
+    "Code": "8202",
+    "Tags": "Neuro critical care call room"
+  },
+  {
+    "Item": "NCCU Supply Room",
+    "Code": "2020",
+    "Tags": "Neuro critical care icu equipment"
+  },
+  {
+    "Item": "Peds Anesthesia Offices (6th Floor)",
+    "Code": "2016",
+    "Tags": "conference room pediatrics"
+  },
+  {
+    "Item": "Resident Kitchen (6th Floor)",
+    "Code": "0126"
+  },
+  {
+    "Item": "Resident Lounge (6th Floor)",
+    "Code": "1216"
+  },
+  {
+    "Item": "SICU Breakroom",
+    "Code": "0202",
+    "Tags": "ICU Critical Care 9th Floor"
+  },
+  {
+    "Item": "SICU Supply Room",
+    "Code": "0202",
+    "Tags": "ICU Critical Care 9th Floor equipment"
+  },
+  {
+    "Item": "Universal Door Code",
+    "Code": "15935700"
+  },
+  {
+    "Item": "WBG Central Pyxis",
+    "Code": "1254",
+    "Tags": "Pharmacy Weinberg meds drugs medications"
+  },
+  {
+    "Item": "WICU Resident Call Room",
+    "Code": "431*",
+    "Tags": "ICU Critical Care Weinberg"
+  },
+  {
+    "Item": "WICU Snack Pantry",
+    "Code": "1048",
+    "Tags": "ICU Critical Care Weinberg"
+  },
+  {
+    "Item": "Wilmer Private Bathroom",
+    "Code": "812*",
+    "Tags": "eye ophtho hell optho"
+  },
+  {
+    "Item": "Wilmer Workroom",
+    "Code": "2720*",
+    "Tags": "eye ophtho hell optho"
+  },
+  {
+    "Item": "ZBOR3 Anesthesia Workroom",
+    "Code": "0911",
+    "Tags": "Tech Supplies Supply Equipment CCT"
+  },
+  {
+    "Item": "ZBOR3 Central Pyxis",
+    "Code": "1254",
+    "Tags": "3rd Floor third pharmacy meds drugs"
+  },
+  {
+    "Item": "ZBOR3 Female Locker Room",
+    "Code": "58075",
+    "Tags": "Women girl 3rd third floor"
+  },
+  {
+    "Item": "ZBOR4 Control Center",
+    "Code": "4444",
+    "Tags": "cc peds pediatrics 4th fourth floor"
+  },
+  {
+    "Item": "ZBOR4 Lounge",
+    "Code": "4444",
+    "Tags": "staff peds pediatrics 4th fourth floor"
+  },
+  {
+    "Item": "ZBOR5 Anesthesia Workroom",
+    "Code": "0911",
+    "Tags": "Tech Supplies Supply Equipment CCT cards cardiac fifth 5th"
+  },
+  {
+    "Item": "ZBOR5 Control Center",
+    "Code": "1212",
+    "Tags": "5th fifth cards cardiac cc"
+  },
+  {
+    "Item": "ZBOR5 Female Locker Room",
+    "Code": "43115",
+    "Tags": "Women girl cards cardiac floor fifth 5th"
+  },
+  {
+    "Item": "ZBOR5 Snack Room",
+    "Code": "4295",
+    "Tags": "cards cardiac floor 5th fifth"
+  },
+  {
+    "Item": "ZBOR5 Staff Lounge",
+    "Code": "8460",
+    "Tags": "PACU food cards cardiac fifth floor 5th"
+  }
+]

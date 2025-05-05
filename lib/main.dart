@@ -3,7 +3,11 @@ import 'package:anesthesia_handbook/Calculators/calculator_home.dart';
 import 'package:anesthesia_handbook/Calculators/fluids.dart';
 import 'package:anesthesia_handbook/Calculators/insulin.dart';
 import 'package:anesthesia_handbook/Calculators/patient_widget.dart';
+import 'package:anesthesia_handbook/Directory/directory_codes.dart';
+import 'package:anesthesia_handbook/Directory/directory_home.dart';
+import 'package:anesthesia_handbook/Directory/directory_phone.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:toastification/toastification.dart';
 
 import 'package:anesthesia_handbook/EmergencyManual/emergency_home.dart';
 import './EmergencyManual/emergency_page.dart';
@@ -98,12 +102,16 @@ final GoRouter _router = GoRouter(
           routes: [
             GoRoute(
               path: '/directory',
-              pageBuilder: (context,state) => const NoTransitionPage(child: Placeholder()),
+              builder: (context,state) => const DirectoryHome(),
               routes: [
                 GoRoute(
-                  path: 'about',
-                  builder: (context,state) => const Placeholder(),
-                )
+                  path: 'codes',
+                  builder: (context,state) => const CodesPage(),
+                ),                
+                GoRoute(
+                  path: 'phone',
+                  builder: (context,state) => const PhonePage(),
+                ),
               ],
             ),
           ],
@@ -121,11 +129,13 @@ class HopkinsApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp.router(
-      scrollBehavior: MyScrollBehavior(),
-      routerConfig: _router,
-      theme: ThemeData(useMaterial3: true,
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
+    return ToastificationWrapper(
+      child: MaterialApp.router(
+        scrollBehavior: MyScrollBehavior(),
+        routerConfig: _router,
+        theme: ThemeData(useMaterial3: true,
+          colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
+        ),
       ),
     );
   }
