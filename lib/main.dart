@@ -3,6 +3,7 @@ import 'package:anesthesia_handbook/Calculators/calculator_home.dart';
 import 'package:anesthesia_handbook/Calculators/fluids.dart';
 import 'package:anesthesia_handbook/Calculators/insulin.dart';
 import 'package:anesthesia_handbook/Calculators/patient_widget.dart';
+import 'package:anesthesia_handbook/Calculators/pump_cases.dart';
 import 'package:anesthesia_handbook/Directory/directory_codes.dart';
 import 'package:anesthesia_handbook/Directory/directory_home.dart';
 import 'package:anesthesia_handbook/Directory/directory_phone.dart';
@@ -92,6 +93,10 @@ final GoRouter _router = GoRouter(
                 GoRoute(
                   path: 'insulin',
                   builder: (context,state) => const InsulinPage(),
+                ),
+                GoRoute(
+                  path: 'pump',
+                  builder: (context,state) => const PumpCaseGuide(),
                 ),
               ],
             ),

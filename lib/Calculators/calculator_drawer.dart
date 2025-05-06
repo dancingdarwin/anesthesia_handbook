@@ -37,6 +37,11 @@ class CalculatorDrawer extends StatelessWidget {
           title: const Text('Insulin'),
           onTap: () {context.push('/calculator/insulin');},
         ),
+        ListTile(
+          leading: const Icon(Icons.favorite),
+          title: const Text('Pump Case'),
+          onTap: () {context.push('/calculator/pump');},
+        ),
       ],),
     );
   }
