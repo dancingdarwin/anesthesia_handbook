@@ -121,6 +121,8 @@ class Setup extends StatefulWidget {
 }
 
 class _SetupState extends State<Setup> {
+  bool _pickuppharm = false;
+  bool _pickuppyxis = false;
   bool _machine = false;
   bool _suction = false;
   bool _alinetransducer = false;
@@ -131,6 +133,7 @@ class _SetupState extends State<Setup> {
   bool _centralines = false;
   bool _alinekit = false;
   bool _induction = false;
+  bool _hotline = false;
   bool _cooler = false;
   bool _drips = false;
 
@@ -144,6 +147,28 @@ class _SetupState extends State<Setup> {
       child: Column(
         children: [
           const SizedBox(width: 10,),
+          CheckboxListTile(
+            title: const Text('Pickup Ancef + Insulin from Pharmacy'),
+            value: _pickuppharm,
+            onChanged: (bool? value) {
+              setState(() {
+              _pickuppharm = value ?? false;
+              });
+            },
+            controlAffinity: ListTileControlAffinity.leading,
+            secondary: const Icon(Icons.medication),
+          ),
+          CheckboxListTile(
+            title: const Text('Pickup Precedex, TXA, and Nitro Sticks from Central Pyxis'),
+            value: _pickuppyxis,
+            onChanged: (bool? value) {
+              setState(() {
+              _pickuppyxis = value ?? false;
+              });
+            },
+            controlAffinity: ListTileControlAffinity.leading,
+            secondary: const Icon(Icons.medication),
+          ),
           CheckboxListTile(
             title: const Text('Machine checked'),
             value: _machine,
@@ -242,6 +267,17 @@ class _SetupState extends State<Setup> {
             },
             controlAffinity: ListTileControlAffinity.leading,
             secondary: const Icon(FontAwesomeIcons.syringe),
+          ),
+          CheckboxListTile(
+            title: const Text('Hot line and push bag w/ triple gang'),
+            value: _hotline,
+            onChanged: (bool? value) {
+              setState(() {
+              _hotline = value ?? false;
+              });
+            },
+            controlAffinity: ListTileControlAffinity.leading,
+            secondary: const Icon(Icons.hot_tub),
           ),
           CheckboxListTile(
             title: const Text('Induction Meds'),
