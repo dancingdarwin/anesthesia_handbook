@@ -44,6 +44,16 @@
     "Tags": "computers"
   },
   {
+    "Item": "Endo Coffee Room",
+    "Code": "2486",
+    "Tags": "endoscopy suite gi gastroenterology bronchoscopy pulmonology IP"
+  },
+  {
+    "Item": "Endo Lounge",
+    "Code": "2486",
+    "Tags": "endoscopy suite gi gastroenterology bronchoscopy pulmonology IP"
+  },
+  {
     "Item": "JHOC Central Pyxis",
     "Code": "1543*",
     "Tags": "meds medications pharmacy"
