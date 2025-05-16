@@ -163,3 +163,55 @@ class CollapsibleCard extends StatelessWidget {
   
   
 }
+
+
+class CheckboxItem extends StatefulWidget {
+  final String label;
+  final Icon icon;
+  final String sublabel;
+  /// Creates a CheckboxItem with a label, icon, and optional sublabel
+
+  const CheckboxItem({super.key, required this.label, required this.icon, this.sublabel = ''});
+
+  @override
+  State<CheckboxItem> createState() => _CheckboxItemState();
+}
+
+class _CheckboxItemState extends State<CheckboxItem> {
+  bool _value = false;
+  @override
+  void initState() {
+    super.initState();
+    _value = false;
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    if (widget.sublabel == '') {
+      return CheckboxListTile(
+        title: Text(widget.label),
+        value: _value,
+        controlAffinity: ListTileControlAffinity.leading,
+        onChanged: (bool? newVal) {
+          setState(() {
+            _value = newVal ?? false;
+          });
+        },
+        secondary: widget.icon,
+      );
+    } else {
+      return CheckboxListTile(
+        title: Text(widget.label),
+        value: _value,
+        subtitle: Text(widget.sublabel),
+        controlAffinity: ListTileControlAffinity.leading,
+        onChanged: (bool? newVal) {
+          setState(() {
+            _value = newVal ?? false;
+          });
+        },
+        secondary: widget.icon,
+      );
+    }
+  }
+}
