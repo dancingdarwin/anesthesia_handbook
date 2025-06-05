@@ -130,22 +130,8 @@ class Setup extends StatelessWidget {
   }
 }
 
-class Drips extends StatefulWidget {
+class Drips extends StatelessWidget {
   const Drips({super.key});
-
-  @override
-  State<Drips> createState() => _DripsState();
-}
-
-class _DripsState extends State<Drips> {
-  bool _epi = false;
-  bool _txa = false;
-  bool _insulin = false;
-  bool _carrier = false;
-  bool _norepi = false;
-  bool _precedex = false;
-  bool _ketamine = false;
-  bool _cefazolin = false;
 
   @override
   Widget build(BuildContext context) {
@@ -154,9 +140,9 @@ class _DripsState extends State<Drips> {
       color: Colors.blue,
       heading: 'Drips (left to right, top to bottom)',
       initiallyExpanded: false,
-      child: Column(
+      child: const Column(
         children: [
-          const SizedBox(width: 10,),
+          SizedBox(width: 10,),
           CheckboxItem(
             label: 'Epinephrine (0.03 mcg/kg/min)',
             icon: Icon(Icons.medication),
@@ -317,7 +303,7 @@ class OnBypass extends StatelessWidget {
             icon: Icon(Icons.medication),
           ),
           CheckboxItem(
-            label: 'Pressors',
+            label: 'Check all drips are appropriate',
             icon: Icon(Icons.medication),
           ),
           CheckboxItem(

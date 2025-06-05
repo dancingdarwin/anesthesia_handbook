@@ -60,6 +60,14 @@ class CalculatorHome extends StatelessWidget {
               labelColor: Colors.white,
             ),
             TileButton(
+              onPressed: () {context.go('/calculator/ca1');},
+              icon: Icons.checklist,
+              label: 'CA-1 Checklists',
+              backgroundColor: theme.colorScheme.primary,
+              iconColor: theme.colorScheme.onPrimary,
+              labelColor: theme.colorScheme.onPrimary,
+            ),
+            TileButton(
               onPressed: () {context.go('/calculator/pump');},
               icon: Icons.favorite,
               label: 'Pump Cases',
