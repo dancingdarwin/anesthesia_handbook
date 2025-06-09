@@ -35,14 +35,14 @@ class CalculatorHome extends StatelessWidget {
               iconColor: theme.colorScheme.onSecondary,
               labelColor: theme.colorScheme.onSecondary,
             ),
-            /* TileButton(
+            TileButton(
               onPressed: () {context.go('/calculator/drugs');},
               icon: Icons.medication,
               label: 'Drugs',
               backgroundColor: theme.colorScheme.tertiary,
               iconColor: theme.colorScheme.onTertiary,
               labelColor: theme.colorScheme.onTertiary,
-            ), */
+            ), 
             TileButton(
               onPressed: () {context.go('/calculator/fluids');},
               icon: Icons.water_drop,

@@ -164,6 +164,72 @@ class CollapsibleCard extends StatelessWidget {
   
 }
 
+class CollapsibleCardColored extends StatelessWidget {
+  final ExpansionTileController controller;
+  final Widget child;
+  final String heading;
+  final Color color;
+  final bool striped;
+  final bool initiallyExpanded;
+
+  const CollapsibleCardColored({required this.heading, required this.child, required this.controller, this.color = Colors.blue, this.striped = false,this.initiallyExpanded = false, super.key});
+
+  @override
+  Widget build(BuildContext context) {
+
+    BoxDecoration decoration;
+    if (striped) {
+      decoration = BoxDecoration(
+        gradient: LinearGradient(
+          colors: [color, color,striped? Colors.white : color,striped? Colors.white : color],
+          stops: const [0,0.5,0.5,1],
+          begin: Alignment.topLeft,
+          end: const Alignment(-0.9,-0.5),
+          tileMode: TileMode.repeated,
+        )
+      );
+    } else {
+      decoration = BoxDecoration(
+        color: color
+      );
+    }
+
+    return Card(
+      clipBehavior: Clip.antiAlias,
+      child: Container(
+        decoration: decoration,
+        child: Padding(
+          padding: const EdgeInsets.only(left: 16.0),
+          child: Container(
+            color: Colors.grey[200],
+            child: ExpansionTile(
+                controller: controller,
+                initiallyExpanded: initiallyExpanded,
+                title: Text(heading,
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 14,
+                    background: Paint()
+                      ..color = const Color.fromARGB(50, 255, 255, 255)
+                      ..style = PaintingStyle.fill,
+                  ),
+                ),
+                dense: false,
+                //childrenPadding: const EdgeInsets.only(bottom: 8.0),
+                shape: const Border(),
+                children: [              
+                  child],
+              ),
+          ),
+        ),
+      )
+      
+    );
+  }
+  
+  
+}
+
 
 class CheckboxItem extends StatefulWidget {
   final String label;

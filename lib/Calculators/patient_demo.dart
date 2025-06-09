@@ -144,6 +144,22 @@ class Patient {
     }
   }
 
+  String getPopulation(List<String> choices) {
+    // If no populations match, return 'None'
+    String bestPopulation = 'general';
+    int bestScore = -1;
+
+    for (String population in choices) {
+      int score = computePopulationScore(population);
+      if (score > bestScore) {
+        bestPopulation = population;
+        bestScore = score;
+      }
+    }
+
+    return bestPopulation;
+  }
+
   /// Converts units into kg (for weight) or years old (for age)
   static double convertUnits(String measurement) {
     List<String> splitString = measurement.split(' ');
@@ -151,7 +167,7 @@ class Patient {
     String unit = splitString[1];
 
     switch (unit) {
-      case 'yo':
+      case 'yr':
         return value;
       case 'mo':
         return value / 12;

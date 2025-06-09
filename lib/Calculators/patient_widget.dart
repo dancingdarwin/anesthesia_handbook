@@ -161,9 +161,9 @@ class PatientWidgetNarrow extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CollapsibleCard(
-      heading: 'Demographics',
+      heading: 'Patient Demographics',
       controller: ExpansionTileController(),
-      initiallyExpanded: true,
+      initiallyExpanded: false,
       color: Colors.green,
       child: const Row(
         children: [
@@ -265,7 +265,7 @@ class PatientBodyNarrow extends StatelessWidget {
         DemoWidget(
           name: 'Age',
           units: const ['yr','mo','d'],
-          defaultUnit: 'yrs',
+          defaultUnit: 'yr',
           initialVal: '40',
         ),
         SexWidget(),

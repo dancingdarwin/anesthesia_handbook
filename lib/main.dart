@@ -1,4 +1,5 @@
 import 'dart:ui';
+import 'package:anesthesia_handbook/Calculators/Drugs/drug_calcs.dart';
 import 'package:anesthesia_handbook/Calculators/calculator_home.dart';
 import 'package:anesthesia_handbook/Calculators/checklists.dart';
 import 'package:anesthesia_handbook/Calculators/fluids.dart';
@@ -102,6 +103,10 @@ final GoRouter _router = GoRouter(
                 GoRoute(
                   path: 'pump',
                   builder: (context,state) => const PumpCaseGuide(),
+                ),
+                GoRoute(
+                  path: 'drugs',
+                  builder: (context,state) => const DrugsPage(),
                 ),
               ],
             ),

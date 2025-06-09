@@ -28,6 +28,11 @@ class CalculatorDrawer extends StatelessWidget {
           onTap: () {context.push('/calculator/equipment');},
         ),
         ListTile(
+          leading: const Icon(Icons.medication),
+          title: const Text('Drugs'),
+          onTap: () {context.push('/calculator/drugs');},
+        ),
+        ListTile(
           leading: const Icon(Icons.water_drop),
           title: const Text('Fluids/Blood'),
           onTap: () {context.push('/calculator/fluids');},
