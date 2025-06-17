@@ -115,11 +115,19 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             TileButton(
               onPressed: () => _dialogBuilder(context),
-              icon: Icons.help,
+              icon: Icons.info,
               label: 'About',
               backgroundColor: theme.colorScheme.tertiary,
               iconColor: theme.colorScheme.onTertiary,
               labelColor: theme.colorScheme.onTertiary,
+            ),
+            TileButton(
+              onPressed: () {launchURL('https://www.youtube.com/watch?v=uHsmJjvpKV8');},
+              icon: Icons.help,
+              label: 'Tutorial',
+              backgroundColor: theme.colorScheme.primaryFixed,
+              iconColor: theme.colorScheme.onPrimaryFixed,
+              labelColor: theme.colorScheme.onPrimaryFixed,
             ),
             TileButton(
               onPressed: () {launchURL('https://forms.gle/2Dw2ExiJvVmooF9i7');},
