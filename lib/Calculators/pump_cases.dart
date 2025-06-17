@@ -252,8 +252,12 @@ class GoingOn extends StatelessWidget {
         children: [
           SizedBox(width: 10,),
           CheckboxItem(
-            label: 'Give Heparin (40U/kg)',
+            label: 'Give Heparin (400U/kg)',
             icon: Icon(Icons.medication),
+          ),
+          CheckboxItem(
+            label: 'Target SBP in 90s for aortic cannulation',
+            icon: Icon(Icons.speed),
           ),
           CheckboxItem(
             label: 'TXA (10 mg/kg bolus, followed by 1 mg/kg/hr)',

@@ -179,7 +179,7 @@ class _DrugCalcState extends ConsumerState<DrugCalc> {
         doseString += "\n\u2022 ${(weight * lowdose).round()}-${(weight * highdose).round()} $newUnit";
       } else {
         double maxDose = double.parse(dose['dose']);
-        doseString += '\n\u2022 ${weight*maxDose} $newUnit';
+        doseString += '\n\u2022 ${weight*maxDose.round()} $newUnit';
       }
       
     }
