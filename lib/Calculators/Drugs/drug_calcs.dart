@@ -96,7 +96,7 @@ class _DrugCalcState extends ConsumerState<DrugCalc> {
     // Set the color and striped properties based on the drug class
     switch (drugClass) {
       case 'opioid':
-        color = Color.fromARGB(97, 0, 113, 174);
+        color = const Color.fromARGB(97, 0, 113, 174);
         striped = false;
         break;
       case 'sedative':

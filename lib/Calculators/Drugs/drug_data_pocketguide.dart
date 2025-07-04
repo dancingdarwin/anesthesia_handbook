@@ -45,9 +45,9 @@ List<Map<String,dynamic>> allDrugsPocket = [
         'class': 'opioid',
         'weight': 'lbw',
         'doses': [
-            {'dose': '0.3-1.0','unit': 'mcg/kg/hr', 'route': 'Infusion'},
+            {'dose': '0.05-0.15','unit': 'mcg/kg/hr', 'route': 'Infusion'},
         ],
-        'preparation': '2 cc (100 mcg) vial + 100 cc NS Bag = 1 mcg/cc',
+        'preparation': '2x 1 cc (100 mcg total) vial + 100 cc NS Bag = 1 mcg/cc',
     },
     {
         'name': 'Remifentanil',
